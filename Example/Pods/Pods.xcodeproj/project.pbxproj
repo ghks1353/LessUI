@@ -151,11 +151,11 @@
 		273CA67B225B1303008C3444 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				273CA675225B0387008C3444 /* UILabelExt.swift */,
 				273CA673225AF9C2008C3444 /* CGRectExt.swift */,
 				273CA671225AF998008C3444 /* CGSizeExt.swift */,
 				273CA66F225AE983008C3444 /* UIViewExt.swift */,
 				273CA66D225AE8E7008C3444 /* UIColorExt.swift */,
+				273CA675225B0387008C3444 /* UILabelExt.swift */,
 				273CA66B225AE815008C3444 /* UIViewControllerExt.swift */,
 			);
 			path = Classes;
