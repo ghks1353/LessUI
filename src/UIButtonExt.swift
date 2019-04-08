@@ -9,6 +9,17 @@ import Foundation
 import UIKit
 
 public extension UIButton {
+    /// Set button title inset
+    @discardableResult
+    func inset(top: CGFloat? = nil, left: CGFloat? = nil, bottom: CGFloat? = nil, right: CGFloat? = nil) -> Self {
+        titleEdgeInsets = UIEdgeInsets(top: top ?? titleEdgeInsets.top,
+                                       left: left ?? titleEdgeInsets.left,
+                                       bottom: bottom ?? titleEdgeInsets.bottom,
+                                       right: right ?? titleEdgeInsets.right)
+
+        return self
+    }
+
     /// Apply button styles by params
     @discardableResult
     func style(color col: UIColor = .black,

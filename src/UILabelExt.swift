@@ -63,7 +63,7 @@ public extension UILabel {
     @discardableResult
     func style(font f: String? = nil,
                size s: CGFloat = 13,
-               color c: Int = 0xFFFFFF,
+               color c: UIColor = .white,
                bold b: Bool = false,
                align a: NSTextAlignment = .left,
                lines l: Int = 0) -> Self {
@@ -80,7 +80,7 @@ public extension UILabel {
         textAlignment = a
         numberOfLines = l
 
-        textColor = UIColor(rgb: c)
+        textColor = c
 
         return self
     }

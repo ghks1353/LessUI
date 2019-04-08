@@ -15,14 +15,16 @@ class ViewController: UIViewController {
     private let welcomeLabel: UILabel = UILabel()
     private let welcomeButton: UIButton = UIButton()
 
+    private let goSecondButton: UIButton = UIButton()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
 
         // Add a label to container view, and assign style
         welcomeLabel.add(to: container)
-            .style(size: 15,
-                   color: 0x333333,
+            .style(size: 24,
+                   color: 0x333333.c,
                    bold: true,
                    align: .center,
                    lines: 0).text = "Welcome!"
@@ -37,31 +39,45 @@ class ViewController: UIViewController {
 
         // Add container view to ViewController's view
         container.add(to: view)
-        
+
         // Otherwise, you can...
-        
+
         // container.add(welcomeLabel, welcomeButton)
         // or
         // container.add([welcomeLabel, welcomeButton])
         // and then...
         // add(container)
+
+        // Place a button bottom of screen, consider safearea.
+        goSecondButton.add(to: view)
+            .style(color: 0xFFFFFF.c,
+                   disabled: 0x666666.c,
+                   background: 0x333333.c,
+                   title: "Go to second view",
+                   titleInset: insBottom)
     }
 
     /// Layout subviews
     override func viewWillLayoutSubviews() {
         // Auto-resize label will fit itself
         welcomeLabel.prefix()
-        
+
         // Also resize button and will fit itself automatically
         // And, set yPos to first label's max pos and add some margin
-        welcomeButton.prefix().set(y: welcomeLabel.mxY).add(y: 4)
-        
+        welcomeButton.prefix().after(welcomeLabel, y: 4)
+
+        // Otherwise you can:
+        // welcomeButton.prefix().set(y: welcomeLabel.mxY).add(y: 4)
+
         // If you consider best performance, write like this:
         // welcomeButton.prefix().set(welcomeLabel.mxY + 4)
 
         // Automatically align subviews to center, and resize container to fit
         // And align vertical/horizional to center.
-        container.subCenter().fit().vCenter().hCenter()
+        container.subCenter().fit().vhCenter()
+
+        // Place a button bottom of screen
+        goSecondButton.after(view, y: 0).set(w: w, h: (48 + bottom) * -1).inset(bottom: bottom)
     }
 
     /// Example of Button touch action handler
@@ -84,13 +100,11 @@ class ViewController: UIViewController {
                 actions: ["Cute normal title",
                           "Cool cancel title",
                           "Bad destructive title"],
-                styles: ["Bad destructive title": .destructive],
-                onSelect: { _, _, index in
-                    // Index by actions array
-                    if index == 2 {
-                        // Show simple title and OK dialog
-                        self.dialog(title: "Nice! you selected the destructive title :>", positive: "OK")
-                    }
-        })
+                styles: ["Bad destructive title": .destructive]) { _, _, index in
+            if index == 2 {
+                // Show simple title and OK dialog
+                self.dialog(title: "Nice! you selected the destructive title :>", positive: "OK")
+            }
+        }
     }
 }

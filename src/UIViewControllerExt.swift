@@ -67,8 +67,8 @@ public extension UIViewController {
                  actions: [String] = [],
                  styles: [String: UIAlertAction.Style] = [:],
                  
-                 onSelect: ((UIAlertController, UIAlertAction, Int) -> Void)? = nil,
-                 on: (() -> Void)? = nil) -> UIAlertController {
+                 on: (() -> Void)? = nil,
+                 onSelect: @escaping ((UIAlertController, UIAlertAction, Int) -> Void)) -> UIAlertController {
         let sheetView: UIAlertController = UIAlertController(title: title,
                                                              message: message,
                                                              preferredStyle: .actionSheet)
@@ -79,7 +79,7 @@ public extension UIViewController {
                 UIAlertAction(title: actions[i],
                               style: styles[actions[i]] ?? .default,
                               handler: { act in
-                                  onSelect?(sheetView, act, i)
+                                  onSelect(sheetView, act, i)
                 })
             )
         }
@@ -146,6 +146,16 @@ public extension UIViewController {
             return 0
         }
         return navigationController?.tabBarController?.tabBar.frame.height ?? 0
+    }
+
+    /// EdgeInset which contains top safearea only
+    var insTop: UIEdgeInsets {
+        return UIEdgeInsets(top: safe.top, left: 0, bottom: 0, right: 0)
+    }
+
+    /// EdgeInset which contains bottom safearea only
+    var insBottom: UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: safe.bottom, right: 0)
     }
 
     /// view.safeAreaInsets

@@ -130,6 +130,24 @@ public extension UIView {
         }
     }
 
+    /// Subtract coord from view's min pos
+    @discardableResult
+    func before(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : from.frame.minX - (x ?? 0),
+                       y: y == nil ? frame.minY : from.frame.minY - (y ?? 0),
+                       width: frame.width, height: frame.height)
+        return self
+    }
+
+    /// Append coord from view's max pos
+    @discardableResult
+    func after(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : from.frame.maxX + (x ?? 0),
+                       y: y == nil ? frame.minY : from.frame.maxY + (y ?? 0),
+                       width: frame.width, height: frame.height)
+        return self
+    }
+
     /// Add frame variables from current value
     @discardableResult
     func add(x: CGFloat = 0, y: CGFloat = 0, w: CGFloat = 0, h: CGFloat = 0) -> Self {
@@ -160,6 +178,12 @@ public extension UIView {
         }
 
         return self
+    }
+
+    /// = vCenter() -> hCenter()
+    @discardableResult
+    func vhCenter() -> Self {
+        return vCenter().hCenter()
     }
 
     /// Align view to horizional center of parent
