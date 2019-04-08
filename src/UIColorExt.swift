@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     convenience init(r: Int, g: Int, b: Int, a: CGFloat = 1.0) {
         self.init(
             red: CGFloat(r) / 255.0,
@@ -18,6 +18,7 @@ extension UIColor {
         )
     }
 
+    /// Single hex value into rgb value
     convenience init(rgb: Int, a: CGFloat = 1.0) {
         self.init(
             r: (rgb >> 16) & 0xFF,
@@ -27,6 +28,7 @@ extension UIColor {
         )
     }
 
+    /// Get rgb hex value from current color
     func rgb() -> Int {
         var r: CGFloat = 0
         var g: CGFloat = 0

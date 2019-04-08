@@ -1,8 +1,8 @@
 {
   "name": "LessUI",
   "version": "0.1.0",
-  "summary": "A short description of LessUI.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Write less, do more! XD",
+  "description": "Super-simple shortcut UI extension codes for swift.",
   "homepage": "https://github.com/ghks1353/LessUI",
   "license": {
     "type": "MIT",
@@ -15,8 +15,10 @@
     "git": "https://github.com/ghks1353/LessUI.git",
     "tag": "0.1.0"
   },
+  "swift_version": "5.0",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "LessUI/Classes/**/*"
+  "source_files": "src/**/*",
+  "frameworks": "UIKit"
 }

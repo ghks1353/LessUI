@@ -14,7 +14,7 @@ public extension CGRect {
     }
 
     /// = frame = to
-    func set(to val: CGRect) {
+    mutating func set(to val: CGRect) {
         self = val
     }
 

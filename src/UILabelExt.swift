@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UILabel {
+public extension UILabel {
     /// = textAlignment
     var align: NSTextAlignment {
         get {
@@ -60,12 +60,13 @@ extension UILabel {
     }
 
     /// Apply font styles by params
+    @discardableResult
     func style(font f: String? = nil,
                size s: CGFloat = 13,
                color c: Int = 0xFFFFFF,
                bold b: Bool = false,
                align a: NSTextAlignment = .left,
-               lines l: Int = 0) {
+               lines l: Int = 0) -> Self {
         if f != nil {
             font = UIFont(name: f ?? "", size: s)
         } else {
@@ -80,5 +81,7 @@ extension UILabel {
         numberOfLines = l
 
         textColor = UIColor(rgb: c)
+
+        return self
     }
 }
