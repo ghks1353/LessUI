@@ -1,0 +1,22 @@
+{
+  "name": "LessUI",
+  "version": "0.1.0",
+  "summary": "A short description of LessUI.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ghks1353/LessUI",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ghks1353": "ghks1353@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ghks1353/LessUI.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LessUI/Classes/**/*"
+}

@@ -1,0 +1,16 @@
+PODS:
+  - LessUI (0.1.0)
+
+DEPENDENCIES:
+  - LessUI (from `../`)
+
+EXTERNAL SOURCES:
+  LessUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LessUI: 06d8c8a826af07e8d325c3211cf06299bf06d8f5
+
+PODFILE CHECKSUM: 8e25054dc255ae074f99454158b15d3b3cffc77f
+
+COCOAPODS: 1.6.1
