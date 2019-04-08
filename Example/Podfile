@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LessUI_Example' do
+  pod 'LessUI', :path => '../'
+
+  target 'LessUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
