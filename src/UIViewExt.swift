@@ -197,6 +197,12 @@ public extension UIView {
         return self
     }
 
+    /// Subtract frame variables from current value
+    @discardableResult
+    func sub(x: CGFloat = 0, y: CGFloat = 0, w: CGFloat = 0, h: CGFloat = 0) -> Self {
+        return add(x: -x, y: -y, w: -w, h: -h)
+    }
+
     /// Add frame variables from current value
     @discardableResult
     func add(x: CGFloat = 0, y: CGFloat = 0, w: CGFloat = 0, h: CGFloat = 0) -> Self {
