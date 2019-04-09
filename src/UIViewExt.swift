@@ -142,6 +142,27 @@ public extension UIView {
         }
     }
 
+    /// View content mode to AspectFit
+    @discardableResult
+    func contain() -> Self {
+        contentMode = .scaleAspectFit
+        return self
+    }
+
+    /// View content mode to AspectFill
+    @discardableResult
+    func cover() -> Self {
+        contentMode = .scaleAspectFill
+        return self
+    }
+
+    /// View content mode to Fill
+    @discardableResult
+    func fill() -> Self {
+        contentMode = .scaleToFill
+        return self
+    }
+
     /// Subtract coord from view's min pos
     @discardableResult
     func before(_ from: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
