@@ -142,6 +142,13 @@ public extension UIView {
         }
     }
 
+    /// Set background color
+    @discardableResult
+    func back(_ color: UIColor) -> Self {
+        backgroundColor = color
+        return self
+    }
+
     /// View content mode to AspectFit
     @discardableResult
     func contain() -> Self {

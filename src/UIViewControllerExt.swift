@@ -34,6 +34,13 @@ public extension UIViewController {
         return self
     }
 
+    /// Set view's background color
+    @discardableResult
+    func back(_ color: UIColor) -> Self {
+        view.backgroundColor = color
+        return self
+    }
+
     /// Show default signle dialog with no/yes button
     @discardableResult
     func dialog(title: String? = nil,
