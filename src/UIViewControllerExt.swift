@@ -10,22 +10,28 @@ import UIKit
 
 public extension UIViewController {
     /// Add a view into this ViewController's view
-    func add(_ view: UIView) {
+    @discardableResult
+    func add(_ view: UIView) -> Self {
         self.view.addSubview(view)
+        return self
     }
 
     /// Add views into this ViewController's view
-    func add(_ views: UIView...) {
+    @discardableResult
+    func add(_ views: UIView...) -> Self {
         views.forEach { obj in
             view.addSubview(obj)
         }
+        return self
     }
 
     /// Add views with array into this viewController's view
-    func add(_ views: [UIView]) {
+    @discardableResult
+    func add(_ views: [UIView]) -> Self {
         views.forEach { obj in
             view.addSubview(obj)
         }
+        return self
     }
 
     /// Show default signle dialog with no/yes button
