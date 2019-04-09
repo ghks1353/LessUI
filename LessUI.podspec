@@ -29,9 +29,20 @@ Super-simple shortcut UI extension codes for swift.
   s.swift_version    = '5.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.source_files = 'src/default/*'
+  
   s.ios.deployment_target = '9.0'
-
-  s.source_files = 'src/**/*'
+  s.default_subspec = 'Default'
+  
+  s.subspec 'Default' do |default|
+      default.source_files = 'src/default/*'
+  end
+  
+  s.subspec 'Transition' do |transition|
+      transition.source_files = 'src/transition/*'
+      transition.dependency 'pop', '~> 1.0'
+  end
+  
   
   # s.resource_bundles = {
   #   'LessUI' => ['LessUI/Assets/*.png']
