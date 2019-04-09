@@ -211,6 +211,30 @@ public extension UIView {
         return self
     }
 
+    /// Add frame x pos itself with width
+    @discardableResult
+    func subX() -> Self {
+        return sub(x: w)
+    }
+
+    /// Add frame y pos itself with height
+    @discardableResult
+    func subY() -> Self {
+        return sub(y: h)
+    }
+
+    /// Add frame x pos itself with width
+    @discardableResult
+    func addX() -> Self {
+        return add(x: w)
+    }
+
+    /// Add frame y pos itself with height
+    @discardableResult
+    func addY() -> Self {
+        return add(y: h)
+    }
+
     /// Set frame variables
     @discardableResult
     func set(x: CGFloat? = nil, y: CGFloat? = nil, w: CGFloat? = nil, h: CGFloat? = nil) -> Self {
