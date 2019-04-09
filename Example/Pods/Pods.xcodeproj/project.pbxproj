@@ -11,6 +11,7 @@
 		1163660CD551C1B541141F1568FA75AC /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C045A7CD8730E108B8C3517F34694D /* UIViewControllerExt.swift */; };
 		1AA7EF76C850F5844C6A5CC0A996E408 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8C0654598D984F978EE9FC0209A1B /* UIViewExt.swift */; };
 		27430A65225C62B300D3EA00 /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27430A64225C62B300D3EA00 /* UIImageViewExt.swift */; };
+		27430A67225C68D400D3EA00 /* UIActivityIndicatorViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27430A66225C68D400D3EA00 /* UIActivityIndicatorViewExt.swift */; };
 		3230CB4AED27048F735DC7F56524CD6C /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D461C901EDAE8DD5FB74696F2401AB /* IntExt.swift */; };
 		35EF6B74D1FFEB5BB6E020F8DD7FE1E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		522720F02A6795750E74BA9B539BAEBF /* LessUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9242FCD1E408E812CD05DB0A1B0715E6 /* LessUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		20C045A7CD8730E108B8C3517F34694D /* UIViewControllerExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExt.swift; path = src/UIViewControllerExt.swift; sourceTree = "<group>"; };
 		24B349DDE97738EBFC2E10DF41DE4546 /* Pods-LessUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		27430A64225C62B300D3EA00 /* UIImageViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageViewExt.swift; path = src/UIImageViewExt.swift; sourceTree = "<group>"; };
+		27430A66225C68D400D3EA00 /* UIActivityIndicatorViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIActivityIndicatorViewExt.swift; path = src/UIActivityIndicatorViewExt.swift; sourceTree = "<group>"; };
 		2A8A7E2C571EE7F265205AEE5E94CBDA /* Pods_LessUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LessUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFE7865DF0366757B92BDE540F3C71A /* Pods-LessUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Tests-Info.plist"; sourceTree = "<group>"; };
 		2EE8C0654598D984F978EE9FC0209A1B /* UIViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = src/UIViewExt.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		88BFD4E4531F6C375BCC5FDE490177CB /* LessUI */ = {
 			isa = PBXGroup;
 			children = (
+				27430A66225C68D400D3EA00 /* UIActivityIndicatorViewExt.swift */,
 				27430A64225C62B300D3EA00 /* UIImageViewExt.swift */,
 				C287CC9754F3AFB74CEAD6490AB373EE /* CGFloatExt.swift */,
 				DFE4B7B60011067ABA712F0B4729D775 /* CGRectExt.swift */,
@@ -416,6 +419,7 @@
 				3230CB4AED27048F735DC7F56524CD6C /* IntExt.swift in Sources */,
 				03584EB294DE43D4C4969C83C0567A59 /* LessUI-dummy.m in Sources */,
 				7978B292314628A6B4403386DD0CE82A /* UIButtonExt.swift in Sources */,
+				27430A67225C68D400D3EA00 /* UIActivityIndicatorViewExt.swift in Sources */,
 				C25C864B7965840E655748F7B03936C0 /* UIColorExt.swift in Sources */,
 				BF641CBB41053099ADAE097934F0929F /* UIControlExt.swift in Sources */,
 				27430A65225C62B300D3EA00 /* UIImageViewExt.swift in Sources */,
