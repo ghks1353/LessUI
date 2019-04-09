@@ -1,5 +1,5 @@
 PODS:
-  - LessUI (0.1.0)
+  - LessUI (0.1.1)
 
 DEPENDENCIES:
   - LessUI (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LessUI: 365388d2537791da81d306e7ccd9b32df50c2839
+  LessUI: 453e00d6e9cffaf3b0ff0a4494ea521273cb4e8f
 
 PODFILE CHECKSUM: 8e25054dc255ae074f99454158b15d3b3cffc77f
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.beta.3

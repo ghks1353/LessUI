@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LessUI'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Write super-simple UI code with LessUI'
 
 # This description is used to generate tags and improve search results.

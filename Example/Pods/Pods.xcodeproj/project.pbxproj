@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		338431A2B5FBF63E3AC5D627B61F1026 /* CGRectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7638EDAA6FED786A0ED6F6D3E40B260 /* CGRectExt.swift */; };
+		03584EB294DE43D4C4969C83C0567A59 /* LessUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B82403C13627686FEF7676647A0E8065 /* LessUI-dummy.m */; };
+		1163660CD551C1B541141F1568FA75AC /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C045A7CD8730E108B8C3517F34694D /* UIViewControllerExt.swift */; };
+		1AA7EF76C850F5844C6A5CC0A996E408 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8C0654598D984F978EE9FC0209A1B /* UIViewExt.swift */; };
+		3230CB4AED27048F735DC7F56524CD6C /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D461C901EDAE8DD5FB74696F2401AB /* IntExt.swift */; };
 		35EF6B74D1FFEB5BB6E020F8DD7FE1E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		46AFCD8500A67258C38B5D266B10DCB5 /* CGFloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2844DD8B2668A31B03CCFB0566A64E /* CGFloatExt.swift */; };
-		4E99A22BB30DA11922B22C25A8787896 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BDB57660D5F396336107FA27BB6672 /* UIButtonExt.swift */; };
-		614C3982F0DD441A896641C70EEFDF82 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03915285C5156FE4857AE690AC5ECAA0 /* UILabelExt.swift */; };
-		6A5F603BD1DE9EC51B2BD6E5B14AA7B2 /* LessUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8280452A102C255A18AEFF7C90A9B65C /* LessUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A936A38F9CE4BA27CA37A27CD7A0046 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		7B73001E0587797878876BC76E1589E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		886CC43B3C46D58E99C4DB5E7D038609 /* Pods-LessUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F97A25371223715CA4AA17789183C1 /* Pods-LessUI_Example-dummy.m */; };
+		522720F02A6795750E74BA9B539BAEBF /* LessUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9242FCD1E408E812CD05DB0A1B0715E6 /* LessUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F11B4C9910B01DFE65DCECE53CE12C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		7978B292314628A6B4403386DD0CE82A /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC75F30E370CA7B3962BC1C1D73D37C /* UIButtonExt.swift */; };
+		886CC43B3C46D58E99C4DB5E7D038609 /* Pods-LessUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E94C35F6C46FCC93A62CC050A6AD0A /* Pods-LessUI_Example-dummy.m */; };
 		8E5C78159F2F507214D1B4547DE9891D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		97D12BAF544AE073AE39CA2EE8C01ACA /* Pods-LessUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A8F0CC2F6F99FBB76646C760F99F0D /* Pods-LessUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A97307D87776DAD1D6802DF121B92171 /* Pods-LessUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAEEBBF300ECA8998DE735FB8FFB966 /* Pods-LessUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B37585008AA0DD8F96C224B65E153AE9 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5CA4947FC9E1F086733F34C13E5F1 /* UIViewExt.swift */; };
-		C7A5D44AE4062C4B0ECDCA548D04A710 /* Pods-LessUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8E73E6B9A90E1F073A78D2BA32A494 /* Pods-LessUI_Tests-dummy.m */; };
-		D282660572DC488ED4865BC7FE167AC4 /* LessUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327F14746963722203F3B4059BA3FDB /* LessUI-dummy.m */; };
-		DBF6129871D46D81F56FD566DE301AC7 /* IntExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79E18CA83D23B93EB36313D766A91D /* IntExt.swift */; };
-		DC71B2D9D3244D39A45C874239FB6B62 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29EA9F85045161DD9F36EAEB9C2F6DF /* UIViewControllerExt.swift */; };
-		E5D5AEEFE1831364CF8F361AEFA6C2B1 /* CGSizeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B84A0CBAFFA290F85EB5DCD154F9ADB /* CGSizeExt.swift */; };
-		F703F4A2E31FA71EBD49A604992A2016 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51800694C7043551F86603D722024485 /* UIColorExt.swift */; };
-		FF12BD19886D92BCA59F546DE8A84238 /* UIControlExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9B8BF3B072E9B55217A2E1989E6E23 /* UIControlExt.swift */; };
+		8F4076D8ADF0F792A3D1A6284B1FE5B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		97D12BAF544AE073AE39CA2EE8C01ACA /* Pods-LessUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B33F8D74D543C59A364B181284C347 /* Pods-LessUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A8F400EC27380C2F651B2FDC23632D9 /* UILabelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A437A113DDC122C4274241EE244E5456 /* UILabelExt.swift */; };
+		A97307D87776DAD1D6802DF121B92171 /* Pods-LessUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D7E0B8290F40B52485FE77FD5E67049 /* Pods-LessUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF641CBB41053099ADAE097934F0929F /* UIControlExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685AE6300844B88CF005E1CBD93AC37F /* UIControlExt.swift */; };
+		C25C864B7965840E655748F7B03936C0 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5160F223D8D582B7FE869079BF29FA52 /* UIColorExt.swift */; };
+		C7A5D44AE4062C4B0ECDCA548D04A710 /* Pods-LessUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 522D984B96137ED1AF6D0DAA6059E602 /* Pods-LessUI_Tests-dummy.m */; };
+		C8704E3B2B4E6769576A49909B8EC75E /* CGRectExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE4B7B60011067ABA712F0B4729D775 /* CGRectExt.swift */; };
+		CF2D6AEF1E2ED3E1F121B9F3F5866D1E /* CGSizeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECD806428FB7FBB917EB2CDB5A63D5B /* CGSizeExt.swift */; };
+		D32239D4D0111BF0D9362E5CCAAEB687 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0375278EB6225A0021E2769975B87FE /* UIImageExt.swift */; };
+		E2FB7078BD783F82B1E09537AC5AF51D /* CGFloatExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C287CC9754F3AFB74CEAD6490AB373EE /* CGFloatExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,64 +35,74 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70A40739F61E86CE5B361DC67B48705C;
+			remoteGlobalIDString = A50587B11D8478A573C0DD24E2FE9A0F;
 			remoteInfo = "Pods-LessUI_Example";
 		};
 		D48B9D96418FC272A65FAC17F4BF7DC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA6A97DB9230E5A7D5EF07B031E05A41;
+			remoteGlobalIDString = CD749FC53D129074E5801CBBDB4D375A;
 			remoteInfo = LessUI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03915285C5156FE4857AE690AC5ECAA0 /* UILabelExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabelExt.swift; path = src/UILabelExt.swift; sourceTree = "<group>"; };
-		0AAEEBBF300ECA8998DE735FB8FFB966 /* Pods-LessUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LessUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		10111F01C722D87BA442EFA76695F6BF /* Pods-LessUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		135A1B9E95A4925E9B78A94171D1903F /* Pods-LessUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LessUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		17DE6201AB951AFF4671A1170F57DCB3 /* Pods-LessUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LessUI_Example.modulemap"; sourceTree = "<group>"; };
-		1DD44A969D69DF3E4DBDB0B5F9C490C7 /* Pods-LessUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2327F14746963722203F3B4059BA3FDB /* LessUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LessUI-dummy.m"; sourceTree = "<group>"; };
-		27E5A3F25882ABDFD51B9644ECC75A4A /* LessUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LessUI.xcconfig; sourceTree = "<group>"; };
+		03E94C35F6C46FCC93A62CC050A6AD0A /* Pods-LessUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LessUI_Example-dummy.m"; sourceTree = "<group>"; };
+		072F154913416F45B93337E956F9B682 /* Pods-LessUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LessUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D461FCF829DA73D4CA2DC9EEA560478 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		166CDDD8BBA5C3DB3AB44ED466042D35 /* LessUI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LessUI.xcconfig; sourceTree = "<group>"; };
+		20C045A7CD8730E108B8C3517F34694D /* UIViewControllerExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExt.swift; path = src/UIViewControllerExt.swift; sourceTree = "<group>"; };
+		24B349DDE97738EBFC2E10DF41DE4546 /* Pods-LessUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2A8A7E2C571EE7F265205AEE5E94CBDA /* Pods_LessUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LessUI_Example.framework; path = "Pods-LessUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3732C28D13FEBB96E881B511A3C5B1B6 /* Pods-LessUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3B84A0CBAFFA290F85EB5DCD154F9ADB /* CGSizeExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSizeExt.swift; path = src/CGSizeExt.swift; sourceTree = "<group>"; };
-		3E4E8426CF7E7D8628BFBB10C2B09DCB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		3E79E18CA83D23B93EB36313D766A91D /* IntExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExt.swift; path = src/IntExt.swift; sourceTree = "<group>"; };
+		2AFE7865DF0366757B92BDE540F3C71A /* Pods-LessUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Tests-Info.plist"; sourceTree = "<group>"; };
+		2EE8C0654598D984F978EE9FC0209A1B /* UIViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = src/UIViewExt.swift; sourceTree = "<group>"; };
+		3DF27256FF01716503D77F8429D19B4D /* Pods-LessUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LessUI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		51800694C7043551F86603D722024485 /* UIColorExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExt.swift; path = src/UIColorExt.swift; sourceTree = "<group>"; };
-		56ED04B1D5938C73FF23BEB29288A107 /* LessUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LessUI.modulemap; sourceTree = "<group>"; };
-		62A8F0CC2F6F99FBB76646C760F99F0D /* Pods-LessUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LessUI_Tests-umbrella.h"; sourceTree = "<group>"; };
-		646194D34EB5689590858CDA121D9801 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		7BF5CA4947FC9E1F086733F34C13E5F1 /* UIViewExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = src/UIViewExt.swift; sourceTree = "<group>"; };
-		8280452A102C255A18AEFF7C90A9B65C /* LessUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LessUI-umbrella.h"; sourceTree = "<group>"; };
-		842B1DB300547FF4A5C30E10A426FBD7 /* Pods-LessUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LessUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8466EEA14BF739224792818DEEF6749D /* Pods-LessUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8C849E56F1A73A1BE32BF208E3E4DF27 /* Pods-LessUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LessUI_Tests.modulemap"; sourceTree = "<group>"; };
-		8CD987DFC5025CDC2725B67194D24C63 /* Pods-LessUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E6ED4839668B647D9FF244D936834BF /* Pods-LessUI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Tests-Info.plist"; sourceTree = "<group>"; };
-		915FF580B0F47E84FDFB3E73E24E94C1 /* LessUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LessUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5160F223D8D582B7FE869079BF29FA52 /* UIColorExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExt.swift; path = src/UIColorExt.swift; sourceTree = "<group>"; };
+		522D984B96137ED1AF6D0DAA6059E602 /* Pods-LessUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LessUI_Tests-dummy.m"; sourceTree = "<group>"; };
+		52B33F8D74D543C59A364B181284C347 /* Pods-LessUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LessUI_Tests-umbrella.h"; sourceTree = "<group>"; };
+		54D461C901EDAE8DD5FB74696F2401AB /* IntExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExt.swift; path = src/IntExt.swift; sourceTree = "<group>"; };
+		583F29CAD24399C6C47443DE82DC2026 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		685AE6300844B88CF005E1CBD93AC37F /* UIControlExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIControlExt.swift; path = src/UIControlExt.swift; sourceTree = "<group>"; };
+		8C72CF2CC4F987CD1058E5F0121C1691 /* Pods-LessUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Example-Info.plist"; sourceTree = "<group>"; };
+		8ECD806428FB7FBB917EB2CDB5A63D5B /* CGSizeExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSizeExt.swift; path = src/CGSizeExt.swift; sourceTree = "<group>"; };
+		9242FCD1E408E812CD05DB0A1B0715E6 /* LessUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LessUI-umbrella.h"; sourceTree = "<group>"; };
 		92EDE9F6B4339D282E1FBA43BB3D8346 /* Pods_LessUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LessUI_Tests.framework; path = "Pods-LessUI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96172A7D3A2D00554DCDB065C4EAE2E1 /* LessUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LessUI-Info.plist"; sourceTree = "<group>"; };
+		984BEA789A344EC4CB50975D8367FB8D /* Pods-LessUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LessUI_Example.modulemap"; sourceTree = "<group>"; };
+		99EC40DA1D0B27D239D09DC976154296 /* Pods-LessUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D7E0B8290F40B52485FE77FD5E67049 /* Pods-LessUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LessUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9FB43FEB5D75EE789CEAA62C09A9505 /* Pods-LessUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LessUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AA2844DD8B2668A31B03CCFB0566A64E /* CGFloatExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExt.swift; path = src/CGFloatExt.swift; sourceTree = "<group>"; };
-		B4E2072B33E4A40C8718E5F20AA4FE7C /* Pods-LessUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Example-Info.plist"; sourceTree = "<group>"; };
-		BE9B8BF3B072E9B55217A2E1989E6E23 /* UIControlExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIControlExt.swift; path = src/UIControlExt.swift; sourceTree = "<group>"; };
-		C29EA9F85045161DD9F36EAEB9C2F6DF /* UIViewControllerExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExt.swift; path = src/UIViewControllerExt.swift; sourceTree = "<group>"; };
+		A1DF9DA88B5CCCA482BF9D43903B3C1B /* LessUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LessUI-Info.plist"; sourceTree = "<group>"; };
+		A437A113DDC122C4274241EE244E5456 /* UILabelExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabelExt.swift; path = src/UILabelExt.swift; sourceTree = "<group>"; };
+		B03671380C87E79FD5197867938D5F14 /* LessUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LessUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4096C1D4E54430F4BB6CA671D98BB33 /* LessUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LessUI.modulemap; sourceTree = "<group>"; };
+		B82403C13627686FEF7676647A0E8065 /* LessUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LessUI-dummy.m"; sourceTree = "<group>"; };
+		C0375278EB6225A0021E2769975B87FE /* UIImageExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExt.swift; path = src/UIImageExt.swift; sourceTree = "<group>"; };
+		C0660E464CC2AEE7D51246B42135EFDA /* Pods-LessUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1736F22FF0658E6BBBE443641937A74 /* Pods-LessUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LessUI_Tests.modulemap"; sourceTree = "<group>"; };
+		C287CC9754F3AFB74CEAD6490AB373EE /* CGFloatExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatExt.swift; path = src/CGFloatExt.swift; sourceTree = "<group>"; };
+		C6732BC361853E84A0C8ED524E4141BC /* Pods-LessUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LessUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CABACBB8078E2310049865BB1B89509D /* LessUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LessUI.framework; path = LessUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF8E73E6B9A90E1F073A78D2BA32A494 /* Pods-LessUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LessUI_Tests-dummy.m"; sourceTree = "<group>"; };
-		D3BDB57660D5F396336107FA27BB6672 /* UIButtonExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExt.swift; path = src/UIButtonExt.swift; sourceTree = "<group>"; };
-		D4F97A25371223715CA4AA17789183C1 /* Pods-LessUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LessUI_Example-dummy.m"; sourceTree = "<group>"; };
-		D7638EDAA6FED786A0ED6F6D3E40B260 /* CGRectExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExt.swift; path = src/CGRectExt.swift; sourceTree = "<group>"; };
-		DC6D9B7C9E9FC72EA6F7FAD543C57CEC /* LessUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LessUI-prefix.pch"; sourceTree = "<group>"; };
-		E5115F2778F2716F9D2872B3EF67ECA8 /* Pods-LessUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA17CADF4C320339111AB8F660DBC821 /* Pods-LessUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DEACC2A0C6EC4C30CEB4DDF594AD45C8 /* Pods-LessUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LessUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DFE4B7B60011067ABA712F0B4729D775 /* CGRectExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExt.swift; path = src/CGRectExt.swift; sourceTree = "<group>"; };
+		E2D3351317FD59D35D89BEF0D475DCE8 /* LessUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LessUI-prefix.pch"; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F7391B95A649964D39844B8721B1E345 /* Pods-LessUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LessUI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FBC75F30E370CA7B3962BC1C1D73D37C /* UIButtonExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIButtonExt.swift; path = src/UIButtonExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		034358052A8E5D294ED0286840257975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F11B4C9910B01DFE65DCECE53CE12C3 /* Foundation.framework in Frameworks */,
+				8F4076D8ADF0F792A3D1A6284B1FE5B2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		610A5F2DE7D0F06924789FBF7F4B3C37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,41 +119,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AE8B6F4F659C28EE1BDADA86ECA1B7D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B73001E0587797878876BC76E1589E1 /* Foundation.framework in Frameworks */,
-				6A936A38F9CE4BA27CA37A27CD7A0046 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1441EE097AF6EE9AA8CC88F754F6B82D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2DAB6CE81BD34BD11F2EAF0A8792F3C0 /* Pods-LessUI_Example */,
-				15361D11D3C1C9CBFB703D0E883E530D /* Pods-LessUI_Tests */,
+				2708F71EE33CA6802EE0689C58424F23 /* Pods-LessUI_Example */,
+				99BA6CC7CEF3F54BEF533C1B0E921ED6 /* Pods-LessUI_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		15361D11D3C1C9CBFB703D0E883E530D /* Pods-LessUI_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8C849E56F1A73A1BE32BF208E3E4DF27 /* Pods-LessUI_Tests.modulemap */,
-				842B1DB300547FF4A5C30E10A426FBD7 /* Pods-LessUI_Tests-acknowledgements.markdown */,
-				E5115F2778F2716F9D2872B3EF67ECA8 /* Pods-LessUI_Tests-acknowledgements.plist */,
-				CF8E73E6B9A90E1F073A78D2BA32A494 /* Pods-LessUI_Tests-dummy.m */,
-				8E6ED4839668B647D9FF244D936834BF /* Pods-LessUI_Tests-Info.plist */,
-				62A8F0CC2F6F99FBB76646C760F99F0D /* Pods-LessUI_Tests-umbrella.h */,
-				8466EEA14BF739224792818DEEF6749D /* Pods-LessUI_Tests.debug.xcconfig */,
-				3732C28D13FEBB96E881B511A3C5B1B6 /* Pods-LessUI_Tests.release.xcconfig */,
-			);
-			name = "Pods-LessUI_Tests";
-			path = "Target Support Files/Pods-LessUI_Tests";
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -153,84 +139,93 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2DAB6CE81BD34BD11F2EAF0A8792F3C0 /* Pods-LessUI_Example */ = {
+		2708F71EE33CA6802EE0689C58424F23 /* Pods-LessUI_Example */ = {
 			isa = PBXGroup;
 			children = (
-				17DE6201AB951AFF4671A1170F57DCB3 /* Pods-LessUI_Example.modulemap */,
-				A9FB43FEB5D75EE789CEAA62C09A9505 /* Pods-LessUI_Example-acknowledgements.markdown */,
-				8CD987DFC5025CDC2725B67194D24C63 /* Pods-LessUI_Example-acknowledgements.plist */,
-				D4F97A25371223715CA4AA17789183C1 /* Pods-LessUI_Example-dummy.m */,
-				135A1B9E95A4925E9B78A94171D1903F /* Pods-LessUI_Example-frameworks.sh */,
-				B4E2072B33E4A40C8718E5F20AA4FE7C /* Pods-LessUI_Example-Info.plist */,
-				0AAEEBBF300ECA8998DE735FB8FFB966 /* Pods-LessUI_Example-umbrella.h */,
-				10111F01C722D87BA442EFA76695F6BF /* Pods-LessUI_Example.debug.xcconfig */,
-				1DD44A969D69DF3E4DBDB0B5F9C490C7 /* Pods-LessUI_Example.release.xcconfig */,
+				984BEA789A344EC4CB50975D8367FB8D /* Pods-LessUI_Example.modulemap */,
+				072F154913416F45B93337E956F9B682 /* Pods-LessUI_Example-acknowledgements.markdown */,
+				DEACC2A0C6EC4C30CEB4DDF594AD45C8 /* Pods-LessUI_Example-acknowledgements.plist */,
+				03E94C35F6C46FCC93A62CC050A6AD0A /* Pods-LessUI_Example-dummy.m */,
+				3DF27256FF01716503D77F8429D19B4D /* Pods-LessUI_Example-frameworks.sh */,
+				8C72CF2CC4F987CD1058E5F0121C1691 /* Pods-LessUI_Example-Info.plist */,
+				9D7E0B8290F40B52485FE77FD5E67049 /* Pods-LessUI_Example-umbrella.h */,
+				24B349DDE97738EBFC2E10DF41DE4546 /* Pods-LessUI_Example.debug.xcconfig */,
+				F7391B95A649964D39844B8721B1E345 /* Pods-LessUI_Example.release.xcconfig */,
 			);
 			name = "Pods-LessUI_Example";
 			path = "Target Support Files/Pods-LessUI_Example";
 			sourceTree = "<group>";
 		};
-		3931765B717BCE52E3F19390AD2C2C5F /* Pod */ = {
+		88BFD4E4531F6C375BCC5FDE490177CB /* LessUI */ = {
 			isa = PBXGroup;
 			children = (
-				915FF580B0F47E84FDFB3E73E24E94C1 /* LessUI.podspec */,
-				646194D34EB5689590858CDA121D9801 /* LICENSE */,
-				3E4E8426CF7E7D8628BFBB10C2B09DCB /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		3E49A2D2276EF4C262A6DB701E8235D9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				56ED04B1D5938C73FF23BEB29288A107 /* LessUI.modulemap */,
-				27E5A3F25882ABDFD51B9644ECC75A4A /* LessUI.xcconfig */,
-				2327F14746963722203F3B4059BA3FDB /* LessUI-dummy.m */,
-				96172A7D3A2D00554DCDB065C4EAE2E1 /* LessUI-Info.plist */,
-				DC6D9B7C9E9FC72EA6F7FAD543C57CEC /* LessUI-prefix.pch */,
-				8280452A102C255A18AEFF7C90A9B65C /* LessUI-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LessUI";
-			sourceTree = "<group>";
-		};
-		8DA2EA745E8773794D7F3B2E23FFC47D /* LessUI */ = {
-			isa = PBXGroup;
-			children = (
-				AA2844DD8B2668A31B03CCFB0566A64E /* CGFloatExt.swift */,
-				D7638EDAA6FED786A0ED6F6D3E40B260 /* CGRectExt.swift */,
-				3B84A0CBAFFA290F85EB5DCD154F9ADB /* CGSizeExt.swift */,
-				3E79E18CA83D23B93EB36313D766A91D /* IntExt.swift */,
-				D3BDB57660D5F396336107FA27BB6672 /* UIButtonExt.swift */,
-				51800694C7043551F86603D722024485 /* UIColorExt.swift */,
-				BE9B8BF3B072E9B55217A2E1989E6E23 /* UIControlExt.swift */,
-				03915285C5156FE4857AE690AC5ECAA0 /* UILabelExt.swift */,
-				C29EA9F85045161DD9F36EAEB9C2F6DF /* UIViewControllerExt.swift */,
-				7BF5CA4947FC9E1F086733F34C13E5F1 /* UIViewExt.swift */,
-				3931765B717BCE52E3F19390AD2C2C5F /* Pod */,
-				3E49A2D2276EF4C262A6DB701E8235D9 /* Support Files */,
+				C287CC9754F3AFB74CEAD6490AB373EE /* CGFloatExt.swift */,
+				DFE4B7B60011067ABA712F0B4729D775 /* CGRectExt.swift */,
+				8ECD806428FB7FBB917EB2CDB5A63D5B /* CGSizeExt.swift */,
+				54D461C901EDAE8DD5FB74696F2401AB /* IntExt.swift */,
+				FBC75F30E370CA7B3962BC1C1D73D37C /* UIButtonExt.swift */,
+				5160F223D8D582B7FE869079BF29FA52 /* UIColorExt.swift */,
+				685AE6300844B88CF005E1CBD93AC37F /* UIControlExt.swift */,
+				C0375278EB6225A0021E2769975B87FE /* UIImageExt.swift */,
+				A437A113DDC122C4274241EE244E5456 /* UILabelExt.swift */,
+				20C045A7CD8730E108B8C3517F34694D /* UIViewControllerExt.swift */,
+				2EE8C0654598D984F978EE9FC0209A1B /* UIViewExt.swift */,
+				C2640DFBD80BC1A73F7A9EEB627F6DCD /* Pod */,
+				DD9A81ECC9995DB27FFDD5F46531B2E2 /* Support Files */,
 			);
 			name = LessUI;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		A2865D6AF11272490DD6AA1449D947C2 /* Development Pods */ = {
+		99BA6CC7CEF3F54BEF533C1B0E921ED6 /* Pods-LessUI_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8DA2EA745E8773794D7F3B2E23FFC47D /* LessUI */,
+				C1736F22FF0658E6BBBE443641937A74 /* Pods-LessUI_Tests.modulemap */,
+				C6732BC361853E84A0C8ED524E4141BC /* Pods-LessUI_Tests-acknowledgements.markdown */,
+				C0660E464CC2AEE7D51246B42135EFDA /* Pods-LessUI_Tests-acknowledgements.plist */,
+				522D984B96137ED1AF6D0DAA6059E602 /* Pods-LessUI_Tests-dummy.m */,
+				2AFE7865DF0366757B92BDE540F3C71A /* Pods-LessUI_Tests-Info.plist */,
+				52B33F8D74D543C59A364B181284C347 /* Pods-LessUI_Tests-umbrella.h */,
+				99EC40DA1D0B27D239D09DC976154296 /* Pods-LessUI_Tests.debug.xcconfig */,
+				DA17CADF4C320339111AB8F660DBC821 /* Pods-LessUI_Tests.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-LessUI_Tests";
+			path = "Target Support Files/Pods-LessUI_Tests";
+			sourceTree = "<group>";
+		};
+		C2640DFBD80BC1A73F7A9EEB627F6DCD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B03671380C87E79FD5197867938D5F14 /* LessUI.podspec */,
+				583F29CAD24399C6C47443DE82DC2026 /* LICENSE */,
+				0D461FCF829DA73D4CA2DC9EEA560478 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A2865D6AF11272490DD6AA1449D947C2 /* Development Pods */,
+				E87E2DEFCA6D574375092F7950F47901 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				E1EF9A171B85916B448CF4F6F2183880 /* Products */,
 				1441EE097AF6EE9AA8CC88F754F6B82D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		DD9A81ECC9995DB27FFDD5F46531B2E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4096C1D4E54430F4BB6CA671D98BB33 /* LessUI.modulemap */,
+				166CDDD8BBA5C3DB3AB44ED466042D35 /* LessUI.xcconfig */,
+				B82403C13627686FEF7676647A0E8065 /* LessUI-dummy.m */,
+				A1DF9DA88B5CCCA482BF9D43903B3C1B /* LessUI-Info.plist */,
+				E2D3351317FD59D35D89BEF0D475DCE8 /* LessUI-prefix.pch */,
+				9242FCD1E408E812CD05DB0A1B0715E6 /* LessUI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LessUI";
 			sourceTree = "<group>";
 		};
 		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
@@ -252,6 +247,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E87E2DEFCA6D574375092F7950F47901 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88BFD4E4531F6C375BCC5FDE490177CB /* LessUI */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -263,6 +266,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81756C3EECA29E4BFB8CF3AA3CC17CBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522720F02A6795750E74BA9B539BAEBF /* LessUI-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ED312EF6994CAAFCEFAD9DB9252F43B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,18 +282,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0B486F1966FB8FAAA7FE9821E6414E9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A5F603BD1DE9EC51B2BD6E5B14AA7B2 /* LessUI-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		70A40739F61E86CE5B361DC67B48705C /* Pods-LessUI_Example */ = {
+		96E67FF83F7E4DB5E0946200CE360299 /* Pods-LessUI_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C35C7DC9DADE34659ED110100BC4F713 /* Build configuration list for PBXNativeTarget "Pods-LessUI_Tests" */;
+			buildPhases = (
+				6820AC70D4190B2462F747FA4BF27225 /* Headers */,
+				A13B599D53EC7A789735E6EC34F92520 /* Sources */,
+				62899BE6B5B49B7FC79A194C4B0CE883 /* Frameworks */,
+				DB660EF0B025068A684AC96208965659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEE5E733A3FC1F1566B80F4A45417B0F /* PBXTargetDependency */,
+			);
+			name = "Pods-LessUI_Tests";
+			productName = "Pods-LessUI_Tests";
+			productReference = 92EDE9F6B4339D282E1FBA43BB3D8346 /* Pods_LessUI_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A50587B11D8478A573C0DD24E2FE9A0F /* Pods-LessUI_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BD267DFC4C530D2635C3EC8F8090D51 /* Build configuration list for PBXNativeTarget "Pods-LessUI_Example" */;
 			buildPhases = (
@@ -301,14 +323,14 @@
 			productReference = 2A8A7E2C571EE7F265205AEE5E94CBDA /* Pods_LessUI_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CA6A97DB9230E5A7D5EF07B031E05A41 /* LessUI */ = {
+		CD749FC53D129074E5801CBBDB4D375A /* LessUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3489BCC277C44051ADE7AF711AA6C586 /* Build configuration list for PBXNativeTarget "LessUI" */;
+			buildConfigurationList = EE55E36DAE3E84FD7CCC3BB013686811 /* Build configuration list for PBXNativeTarget "LessUI" */;
 			buildPhases = (
-				F0B486F1966FB8FAAA7FE9821E6414E9 /* Headers */,
-				E203D50E694764A17AABD8DFCE4789F9 /* Sources */,
-				7AE8B6F4F659C28EE1BDADA86ECA1B7D /* Frameworks */,
-				D37164CE3BC852F21D88254EF5DDC3DF /* Resources */,
+				81756C3EECA29E4BFB8CF3AA3CC17CBB /* Headers */,
+				8A9A8CC6BAA334E00DD7E8D9A6BB4A99 /* Sources */,
+				034358052A8E5D294ED0286840257975 /* Frameworks */,
+				178292BD81401FCB4FD46826432D661A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -317,25 +339,6 @@
 			name = LessUI;
 			productName = LessUI;
 			productReference = CABACBB8078E2310049865BB1B89509D /* LessUI.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DF4B1636A32CE9B392473D01636886A1 /* Pods-LessUI_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C35C7DC9DADE34659ED110100BC4F713 /* Build configuration list for PBXNativeTarget "Pods-LessUI_Tests" */;
-			buildPhases = (
-				6820AC70D4190B2462F747FA4BF27225 /* Headers */,
-				A13B599D53EC7A789735E6EC34F92520 /* Sources */,
-				62899BE6B5B49B7FC79A194C4B0CE883 /* Frameworks */,
-				DB660EF0B025068A684AC96208965659 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FEE5E733A3FC1F1566B80F4A45417B0F /* PBXTargetDependency */,
-			);
-			name = "Pods-LessUI_Tests";
-			productName = "Pods-LessUI_Tests";
-			productReference = 92EDE9F6B4339D282E1FBA43BB3D8346 /* Pods_LessUI_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -359,22 +362,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA6A97DB9230E5A7D5EF07B031E05A41 /* LessUI */,
-				70A40739F61E86CE5B361DC67B48705C /* Pods-LessUI_Example */,
-				DF4B1636A32CE9B392473D01636886A1 /* Pods-LessUI_Tests */,
+				CD749FC53D129074E5801CBBDB4D375A /* LessUI */,
+				A50587B11D8478A573C0DD24E2FE9A0F /* Pods-LessUI_Example */,
+				96E67FF83F7E4DB5E0946200CE360299 /* Pods-LessUI_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61C43E750BC46ABEF252600245056160 /* Resources */ = {
+		178292BD81401FCB4FD46826432D661A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D37164CE3BC852F21D88254EF5DDC3DF /* Resources */ = {
+		61C43E750BC46ABEF252600245056160 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,29 +402,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8A9A8CC6BAA334E00DD7E8D9A6BB4A99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FB7078BD783F82B1E09537AC5AF51D /* CGFloatExt.swift in Sources */,
+				C8704E3B2B4E6769576A49909B8EC75E /* CGRectExt.swift in Sources */,
+				CF2D6AEF1E2ED3E1F121B9F3F5866D1E /* CGSizeExt.swift in Sources */,
+				3230CB4AED27048F735DC7F56524CD6C /* IntExt.swift in Sources */,
+				03584EB294DE43D4C4969C83C0567A59 /* LessUI-dummy.m in Sources */,
+				7978B292314628A6B4403386DD0CE82A /* UIButtonExt.swift in Sources */,
+				C25C864B7965840E655748F7B03936C0 /* UIColorExt.swift in Sources */,
+				BF641CBB41053099ADAE097934F0929F /* UIControlExt.swift in Sources */,
+				D32239D4D0111BF0D9362E5CCAAEB687 /* UIImageExt.swift in Sources */,
+				9A8F400EC27380C2F651B2FDC23632D9 /* UILabelExt.swift in Sources */,
+				1163660CD551C1B541141F1568FA75AC /* UIViewControllerExt.swift in Sources */,
+				1AA7EF76C850F5844C6A5CC0A996E408 /* UIViewExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A13B599D53EC7A789735E6EC34F92520 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C7A5D44AE4062C4B0ECDCA548D04A710 /* Pods-LessUI_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E203D50E694764A17AABD8DFCE4789F9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46AFCD8500A67258C38B5D266B10DCB5 /* CGFloatExt.swift in Sources */,
-				338431A2B5FBF63E3AC5D627B61F1026 /* CGRectExt.swift in Sources */,
-				E5D5AEEFE1831364CF8F361AEFA6C2B1 /* CGSizeExt.swift in Sources */,
-				DBF6129871D46D81F56FD566DE301AC7 /* IntExt.swift in Sources */,
-				D282660572DC488ED4865BC7FE167AC4 /* LessUI-dummy.m in Sources */,
-				4E99A22BB30DA11922B22C25A8787896 /* UIButtonExt.swift in Sources */,
-				F703F4A2E31FA71EBD49A604992A2016 /* UIColorExt.swift in Sources */,
-				FF12BD19886D92BCA59F546DE8A84238 /* UIControlExt.swift in Sources */,
-				614C3982F0DD441A896641C70EEFDF82 /* UILabelExt.swift in Sources */,
-				DC71B2D9D3244D39A45C874239FB6B62 /* UIViewControllerExt.swift in Sources */,
-				B37585008AA0DD8F96C224B65E153AE9 /* UIViewExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,52 +435,21 @@
 		92A32AA7F891556382FCAB6B2D68361C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LessUI;
-			target = CA6A97DB9230E5A7D5EF07B031E05A41 /* LessUI */;
+			target = CD749FC53D129074E5801CBBDB4D375A /* LessUI */;
 			targetProxy = D48B9D96418FC272A65FAC17F4BF7DC6 /* PBXContainerItemProxy */;
 		};
 		FEE5E733A3FC1F1566B80F4A45417B0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LessUI_Example";
-			target = 70A40739F61E86CE5B361DC67B48705C /* Pods-LessUI_Example */;
+			target = A50587B11D8478A573C0DD24E2FE9A0F /* Pods-LessUI_Example */;
 			targetProxy = 332095C64734A3C8E328EFF2D77CDBDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3006BDA828B97E197954CA828D56E9EC /* Debug */ = {
+		1A75D1CEFA59337EA0CE44D740F3DE35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27E5A3F25882ABDFD51B9644ECC75A4A /* LessUI.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LessUI/LessUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LessUI/LessUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LessUI/LessUI.modulemap";
-				PRODUCT_MODULE_NAME = LessUI;
-				PRODUCT_NAME = LessUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		448D9146D319C7EBBB8B34B9F12F9AED /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27E5A3F25882ABDFD51B9644ECC75A4A /* LessUI.xcconfig */;
+			baseConfigurationReference = 166CDDD8BBA5C3DB3AB44ED466042D35 /* LessUI.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -508,7 +481,7 @@
 		};
 		53FE1B53DBE30F1DFBD81608A98C0AB5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DD44A969D69DF3E4DBDB0B5F9C490C7 /* Pods-LessUI_Example.release.xcconfig */;
+			baseConfigurationReference = F7391B95A649964D39844B8721B1E345 /* Pods-LessUI_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -542,7 +515,7 @@
 		};
 		8CB4B74C88B3E08B29B53334E11C9028 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8466EEA14BF739224792818DEEF6749D /* Pods-LessUI_Tests.debug.xcconfig */;
+			baseConfigurationReference = 99EC40DA1D0B27D239D09DC976154296 /* Pods-LessUI_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -567,6 +540,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0D15AAA25B24AF3900C6D27EFB1B850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166CDDD8BBA5C3DB3AB44ED466042D35 /* LessUI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LessUI/LessUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LessUI/LessUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LessUI/LessUI.modulemap";
+				PRODUCT_MODULE_NAME = LessUI;
+				PRODUCT_NAME = LessUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -699,7 +703,7 @@
 		};
 		F8E4D97E75D2BB63D89D8918BF5D0D71 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10111F01C722D87BA442EFA76695F6BF /* Pods-LessUI_Example.debug.xcconfig */;
+			baseConfigurationReference = 24B349DDE97738EBFC2E10DF41DE4546 /* Pods-LessUI_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -732,7 +736,7 @@
 		};
 		FB5F02ED8B42B5EDC5FAFE402ABCC48B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3732C28D13FEBB96E881B511A3C5B1B6 /* Pods-LessUI_Tests.release.xcconfig */;
+			baseConfigurationReference = DA17CADF4C320339111AB8F660DBC821 /* Pods-LessUI_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -767,15 +771,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3489BCC277C44051ADE7AF711AA6C586 /* Build configuration list for PBXNativeTarget "LessUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3006BDA828B97E197954CA828D56E9EC /* Debug */,
-				448D9146D319C7EBBB8B34B9F12F9AED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3BD267DFC4C530D2635C3EC8F8090D51 /* Build configuration list for PBXNativeTarget "Pods-LessUI_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -799,6 +794,15 @@
 			buildConfigurations = (
 				8CB4B74C88B3E08B29B53334E11C9028 /* Debug */,
 				FB5F02ED8B42B5EDC5FAFE402ABCC48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE55E36DAE3E84FD7CCC3BB013686811 /* Build configuration list for PBXNativeTarget "LessUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D15AAA25B24AF3900C6D27EFB1B850 /* Debug */,
+				1A75D1CEFA59337EA0CE44D740F3DE35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
