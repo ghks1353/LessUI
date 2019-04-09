@@ -17,37 +17,49 @@ public extension UIView {
     }
 
     /// Add a view into this view
-    func add(_ view: UIView) {
+    @discardableResult
+    func add(_ view: UIView) -> Self {
         addSubview(view)
+        return self
     }
 
     /// Add views into this view
-    func add(_ views: UIView...) {
+    @discardableResult
+    func add(_ views: UIView...) -> Self {
         views.forEach { obj in
             addSubview(obj)
         }
+        return self
     }
 
     /// Add views with array into this view
-    func add(_ views: [UIView]) {
+    @discardableResult
+    func add(_ views: [UIView]) -> Self {
         views.forEach { obj in
             addSubview(obj)
         }
+        return self
     }
 
     /// = removeFromSuperview()
-    func remove() {
+    @discardableResult
+    func remove() -> Self {
         removeFromSuperview()
+        return self
     }
 
     /// isHidden = false
-    func show() {
+    @discardableResult
+    func show() -> Self {
         isHidden = false
+        return self
     }
 
     /// isHidden = true
-    func hide() {
+    @discardableResult
+    func hide() -> Self {
         isHidden = true
+        return self
     }
 
     /// !isHidden
@@ -132,27 +144,27 @@ public extension UIView {
 
     /// Subtract coord from view's min pos
     @discardableResult
-    func before(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : from.frame.minX - (x ?? 0),
-                       y: y == nil ? frame.minY : from.frame.minY - (y ?? 0),
+    func before(_ from: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (from?.frame.minX ?? 0) - (x ?? 0),
+                       y: y == nil ? frame.minY : (from?.frame.minY ?? 0) - (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
     }
 
     /// Append coord from view's min pos (start)
     @discardableResult
-    func start(_ of: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : of.frame.minX + (x ?? 0),
-                       y: y == nil ? frame.minY : of.frame.minY + (y ?? 0),
+    func start(_ of: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (of?.frame.minX ?? 0) + (x ?? 0),
+                       y: y == nil ? frame.minY : (of?.frame.minY ?? 0) + (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
     }
 
     /// Append coord from view's max pos
     @discardableResult
-    func after(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : from.frame.maxX + (x ?? 0),
-                       y: y == nil ? frame.minY : from.frame.maxY + (y ?? 0),
+    func after(_ from: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (from?.frame.maxX ?? 0) + (x ?? 0),
+                       y: y == nil ? frame.minY : (from?.frame.maxY ?? 0) + (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
     }
