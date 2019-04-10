@@ -161,6 +161,17 @@ public extension UIView {
         return nil
     }
 
+    /// Set cornor radius of view
+    @discardableResult
+    func radius(_ val: CGFloat) -> Self {
+        if val > 0 {
+            clipsToBounds = true
+        }
+        layer.cornerRadius = val
+        
+        return self
+    }
+    
     /// Set background color
     @discardableResult
     func back(_ color: UIColor) -> Self {
