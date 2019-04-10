@@ -1,16 +1,28 @@
 PODS:
-  - LessUI (0.1.1)
+  - LessUI (0.1.1):
+    - LessUI/Default (= 0.1.1)
+  - LessUI/Default (0.1.1)
+  - LessUI/Transition (0.1.1):
+    - pop (~> 1.0)
+  - pop (1.0.12)
 
 DEPENDENCIES:
   - LessUI (from `../`)
+  - LessUI/Transition (from `../`)
+  - pop (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - pop
 
 EXTERNAL SOURCES:
   LessUI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LessUI: 453e00d6e9cffaf3b0ff0a4494ea521273cb4e8f
+  LessUI: 5d2c0321ac86aec5e827ba1671a0a97bb919a235
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: 8e25054dc255ae074f99454158b15d3b3cffc77f
+PODFILE CHECKSUM: 1e9e6d205f56d37d0e5b95f69bca403c96aa43f9
 
 COCOAPODS: 1.7.0.beta.3

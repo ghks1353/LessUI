@@ -141,6 +141,25 @@ public extension UIView {
             frame.size = newValue
         }
     }
+    
+    /// -> vc.safeAreaInsets
+    var safe: UIEdgeInsets {
+        return vc?.safe ?? .zero
+    }
+    
+    /// Get viewController of this view
+    var vc: UIViewController? {
+        var responder: UIResponder? = self
+        
+        while responder != nil {
+            responder = responder!.next
+            if let viewController = responder as? UIViewController {
+                return viewController
+            }
+        }
+        
+        return nil
+    }
 
     /// Set background color
     @discardableResult
@@ -337,7 +356,7 @@ public extension UIView {
     func prefix(_ val: CGFloat = 0) -> Self {
         frame = CGRect(x: frame.minX, y: frame.minY, width: val, height: 0)
         sizeToFit()
-
+        
         return self
     }
 }

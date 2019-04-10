@@ -1,6 +1,0 @@
-framework module LessUI {
-  umbrella header "LessUI-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -269,10 +269,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LessUI_Example/Pods-LessUI_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LessUI/LessUI.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LessUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
