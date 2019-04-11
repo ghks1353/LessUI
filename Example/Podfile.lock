@@ -1,18 +1,28 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - LessUI (0.1.1):
     - LessUI/Default (= 0.1.1)
   - LessUI/Default (0.1.1)
+  - LessUI/Network (0.1.1):
+    - Alamofire (~> 4.7)
+    - AlamofireImage (~> 3.5)
   - LessUI/Transition (0.1.1):
     - pop (~> 1.0)
   - pop (1.0.12)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - LessUI (from `../`)
+  - LessUI/Network (from `../`)
   - LessUI/Transition (from `../`)
   - pop (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - pop
 
 EXTERNAL SOURCES:
@@ -20,9 +30,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LessUI: 5d2c0321ac86aec5e827ba1671a0a97bb919a235
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  LessUI: 2fc997e7defa77f4cb9c60e73185c87a674e9db8
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: 1e9e6d205f56d37d0e5b95f69bca403c96aa43f9
+PODFILE CHECKSUM: 03eee1487e9f4ad538641b06d2f74b60d9e53024
 
 COCOAPODS: 1.7.0.beta.3

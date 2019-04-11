@@ -43,6 +43,11 @@ Super-simple shortcut UI extension codes for swift.
       transition.dependency 'pop', '~> 1.0'
   end
   
+  s.subspec 'Network' do |transition|
+      transition.source_files = 'src/network/*'
+      transition.dependency 'Alamofire', '~> 4.7'
+      transition.dependency 'AlamofireImage', '~> 3.5'
+  end
   
   # s.resource_bundles = {
   #   'LessUI' => ['LessUI/Assets/*.png']
