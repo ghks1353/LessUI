@@ -355,7 +355,7 @@ public extension UIView {
         size = CGSize(width: maxWidth, height: maxHeight)
         return self
     }
-
+    
     /// = set width 0 and sizeToFit()
     @discardableResult
     func prefix() -> Self {

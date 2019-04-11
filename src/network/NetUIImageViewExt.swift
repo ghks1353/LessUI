@@ -22,10 +22,6 @@ public extension UIImageView {
               on: @escaping ((Error?) -> Void) = { _ in }
               ) -> Self {
         let req: URLRequest = URLRequest(url: URL(string: url)!)
-        let downloader: ImageDownloader = afDownloader ?? ImageDownloader(configuration: ImageDownloader.defaultURLSessionConfiguration(),
-                                                                          downloadPrioritization: .fifo,
-                                                                          maximumActiveDownloads: 1,
-                                                                          imageCache: AutoPurgingImageCache())
         
         let activityIndicator: UIActivityIndicatorView? = indicator != nil ? UIActivityIndicatorView(style: indicator!) : nil
         if activityIndicator != nil {
@@ -35,11 +31,8 @@ public extension UIImageView {
             activityIndicator!.startAnimating()
         }
         
-        downloader.download(req) { response in
-            if response.error != nil && response.result.value != nil {
-                self.image = response.result.value
-            }
-            
+        af_imageDownloader = afDownloader
+        af_setImage(withURLRequest: req) { response in
             activityIndicator?.stopAnimating()
             activityIndicator?.removeFromSuperview()
             

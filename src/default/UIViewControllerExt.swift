@@ -79,6 +79,7 @@ public extension UIViewController {
                  
                  actions: [String] = [],
                  styles: [String: UIAlertAction.Style] = [:],
+                 checked: [String: Bool] = [:],
                  
                  on: (() -> Void)? = nil,
                  onSelect: @escaping ((UIAlertController, UIAlertAction, Int) -> Void)) -> UIAlertController {
@@ -88,13 +89,14 @@ public extension UIViewController {
 
         /// Add sheet actions
         for i: Int in 0 ..< actions.count {
-            sheetView.addAction(
-                UIAlertAction(title: actions[i],
-                              style: styles[actions[i]] ?? .default,
-                              handler: { act in
-                                  onSelect(sheetView, act, i)
-                })
-            )
+            let action: UIAlertAction = UIAlertAction(title: actions[i],
+                                                      style: styles[actions[i]] ?? .default,
+                                                      handler: { act in onSelect(sheetView, act, i) })
+            if checked[actions[i]] == true {
+                action.setValue(true, forKey: "checked")
+            }
+            
+            sheetView.addAction(action)
         }
 
         // Show view
