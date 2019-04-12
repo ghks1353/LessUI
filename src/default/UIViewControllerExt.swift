@@ -40,7 +40,7 @@ public extension UIViewController {
         view.backgroundColor = color
         return self
     }
-
+    
     /// Show default signle dialog with no/yes button
     @discardableResult
     func dialog(title: String? = nil,
@@ -103,6 +103,17 @@ public extension UIViewController {
         present(sheetView, animated: true, completion: on)
 
         return sheetView
+    }
+    
+    /// Create new tabbar item
+    @discardableResult
+    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero) -> Self {
+        tabBarItem = UITabBarItem(title: title,
+                                  image: off?.withRenderingMode(.alwaysOriginal),
+                                  selectedImage: on?.withRenderingMode(.alwaysOriginal))
+        tabBarItem?.imageInsets = inset
+        
+        return self
     }
 
     /// = view.frame.width
