@@ -21,6 +21,11 @@ public extension UIImageView {
               afDownloader: ImageDownloader? = nil,
               on: @escaping ((Error?) -> Void) = { _ in }
               ) -> Self {
+        if url == "" {
+            print("[LessUI] URL is empty")
+            return self
+        }
+        
         let req: URLRequest = URLRequest(url: URL(string: url)!)
         
         let activityIndicator: UIActivityIndicatorView? = indicator != nil ? UIActivityIndicatorView(style: indicator!) : nil
