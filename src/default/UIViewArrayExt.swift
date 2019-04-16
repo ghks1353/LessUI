@@ -23,10 +23,16 @@ public extension Array where Element:UIView {
     
     /// Listing view from start to end with value
     @discardableResult
-    func list(x: CGFloat? = nil, y: CGFloat? = nil) -> [UIView] {
+    func list(x: CGFloat? = nil, y: CGFloat? = nil, offsetX: CGFloat? = nil, offsetY: CGFloat? = nil) -> [UIView] {
         for i: Int in 0 ..< count {
-            let coord: CGPoint = CGPoint(x: x == nil ? self[i].frame.minX : (x ?? 0) * CGFloat(i),
-                                         y: y == nil ? self[i].frame.minY : (y ?? 0) * CGFloat(i))
+            let targetPos: CGPoint = CGPoint(x: (x ?? 0) * CGFloat(i),
+                                             y: (y ?? 0) * CGFloat(i))
+            let calcPos: CGPoint = CGPoint(x: targetPos.x + (offsetX ?? 0),
+                                           y: targetPos.y + (offsetY ?? 0))
+            
+            let coord: CGPoint = CGPoint(x: x == nil ? self[i].frame.minX : calcPos.x,
+                                         y: y == nil ? self[i].frame.minY : calcPos.y)
+            
             self[i].frame = CGRect(x: coord.x, y: coord.y, width: self[i].frame.width, height: self[i].frame.height)
         }
         return self as [UIView]
