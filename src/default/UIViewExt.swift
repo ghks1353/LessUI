@@ -160,6 +160,13 @@ public extension UIView {
         
         return nil
     }
+    
+    /// Set interactable or not
+    @discardableResult
+    func interaction(_ val: CGFloat) -> Self {
+        isUserInteractionEnabled = val
+        return self
+    }
 
     /// Set cornor radius of view
     @discardableResult
