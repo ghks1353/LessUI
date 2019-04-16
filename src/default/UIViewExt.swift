@@ -163,7 +163,7 @@ public extension UIView {
     
     /// Set interactable or not
     @discardableResult
-    func interaction(_ val: CGFloat) -> Self {
+    func interaction(_ val: Bool) -> Self {
         isUserInteractionEnabled = val
         return self
     }
