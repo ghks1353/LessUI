@@ -84,4 +84,54 @@ public extension UILabel {
 
         return self
     }
+    
+    /// Set attributed string with html string
+    @discardableResult
+    func html(str: String = "", font: UIFont? = nil, color: UIColor? = nil) -> Self {
+        attributedText = NSAttributedString()
+        
+        return append(html: str, font: font, color: color)
+    }
+    
+    /// Append attributed string with html string
+    @discardableResult
+    func append(html str: String = "", font: UIFont? = nil, color: UIColor? = nil) -> Self {
+        let data: Data = str.data(using: .utf8) ?? Data()
+        let attrStr: NSMutableAttributedString = NSMutableAttributedString(attributedString: attributedText ?? NSAttributedString())
+        
+        do {
+            let newStr: NSMutableAttributedString = try NSMutableAttributedString(data: data,
+                                                                                  options: [.documentType: NSAttributedString.DocumentType.html,
+                                                                                            .characterEncoding: String.Encoding.utf8.rawValue],
+                                                                                  documentAttributes: nil)
+            
+            newStr.addAttribute(NSAttributedString.Key.font,
+                                 value: font ?? UIFont.systemFont(ofSize: 13),
+                                 range: NSRange(location: 0, length: newStr.length))
+            newStr.addAttribute(NSAttributedString.Key.foregroundColor,
+                                 value: color ?? UIColor.black,
+                                 range: NSRange(location: 0, length: newStr.length))
+            attrStr.append(newStr)
+        } catch {
+            // ...
+        }
+        
+        // Set attributed str
+        attributedText = attrStr
+        
+        return self
+    }
+    
+    /// Align attributedstring
+    @discardableResult
+    func alignAttr(to align: NSTextAlignment = .center) -> Self {
+        let attrStr: NSMutableAttributedString = NSMutableAttributedString(attributedString: attributedText ?? NSAttributedString())
+        let mutableParagraph: NSMutableParagraphStyle = NSMutableParagraphStyle()
+        mutableParagraph.alignment = align
+        
+        attrStr.addAttribute(NSAttributedString.Key.paragraphStyle, value: mutableParagraph, range: NSRange(location: 0, length: attrStr.length))
+        attributedText = attrStr
+        return self
+    }
+    
 }
