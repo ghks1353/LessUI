@@ -19,7 +19,7 @@ public extension UIImageView {
               indicator: UIActivityIndicatorView.Style? = .gray,
               
               afDownloader: ImageDownloader? = nil,
-              on: @escaping ((Error?) -> Void) = { _ in }
+              on: @escaping ((Error?, UIImage?) -> Void) = { _, _ in }
               ) -> Self {
         if url == "" {
             print("[LessUI] URL is empty")
@@ -41,7 +41,7 @@ public extension UIImageView {
             activityIndicator?.stopAnimating()
             activityIndicator?.removeFromSuperview()
             
-            on(response.error)
+            on(response.error, response.value)
         }
         
         return self
