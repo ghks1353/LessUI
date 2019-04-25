@@ -81,6 +81,10 @@ public extension UIViewController {
                  styles: [String: UIAlertAction.Style] = [:],
                  checked: [String: Bool] = [:],
                  
+                 source: UIView? = nil,
+                 sourceRect: CGRect? = nil,
+                 arrowDirection: UIPopoverArrowDirection? = nil,
+                 
                  on: (() -> Void)? = nil,
                  onSelect: @escaping ((UIAlertController, UIAlertAction, Int) -> Void)) -> UIAlertController {
         let sheetView: UIAlertController = UIAlertController(title: title,
@@ -98,10 +102,15 @@ public extension UIViewController {
             
             sheetView.addAction(action)
         }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            sheetView.popoverPresentationController?.sourceView = source
+            sheetView.popoverPresentationController?.sourceRect = sourceRect ?? .zero
+            sheetView.popoverPresentationController?.permittedArrowDirections = arrowDirection ?? UIPopoverArrowDirection.any
+        }
 
         // Show view
         present(sheetView, animated: true, completion: on)
-
         return sheetView
     }
     
