@@ -84,4 +84,26 @@ public extension UILabel {
 
         return self
     }
+    
+    /// Set attributed string with html string
+    @discardableResult
+    func html(str: String = "", font: UIFont? = nil, color: UIColor? = nil) -> Self {
+        attributedText = NSAttributedString().html(str: str, font: font, color: color)
+        return self
+    }
+    
+    /// Append attributed string with html string
+    @discardableResult
+    func append(html str: String = "", font: UIFont? = nil, color: UIColor? = nil) -> Self {
+        attributedText = (attributedText ?? NSAttributedString()).append(html: str, font: font, color: color)
+        return self
+    }
+    
+    /// Align attributedstring
+    @discardableResult
+    func alignAttr(to align: NSTextAlignment = .center) -> Self {
+        attributedText = (attributedText ?? NSAttributedString()).alignAttr(to: align)
+        return self
+    }
+    
 }

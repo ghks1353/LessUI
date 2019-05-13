@@ -17,37 +17,49 @@ public extension UIView {
     }
 
     /// Add a view into this view
-    func add(_ view: UIView) {
+    @discardableResult
+    func add(_ view: UIView) -> Self {
         addSubview(view)
+        return self
     }
 
     /// Add views into this view
-    func add(_ views: UIView...) {
+    @discardableResult
+    func add(_ views: UIView...) -> Self {
         views.forEach { obj in
             addSubview(obj)
         }
+        return self
     }
 
     /// Add views with array into this view
-    func add(_ views: [UIView]) {
+    @discardableResult
+    func add(_ views: [UIView]) -> Self {
         views.forEach { obj in
             addSubview(obj)
         }
+        return self
     }
 
     /// = removeFromSuperview()
-    func remove() {
+    @discardableResult
+    func remove() -> Self {
         removeFromSuperview()
+        return self
     }
 
     /// isHidden = false
-    func show() {
+    @discardableResult
+    func show() -> Self {
         isHidden = false
+        return self
     }
 
     /// isHidden = true
-    func hide() {
+    @discardableResult
+    func hide() -> Self {
         isHidden = true
+        return self
     }
 
     /// !isHidden
@@ -129,32 +141,103 @@ public extension UIView {
             frame.size = newValue
         }
     }
+    
+    /// -> vc.safeAreaInsets
+    var safe: UIEdgeInsets {
+        return vc?.safe ?? .zero
+    }
+    
+    /// Get viewController of this view
+    var vc: UIViewController? {
+        var responder: UIResponder? = self
+        
+        while responder != nil {
+            responder = responder!.next
+            if let viewController = responder as? UIViewController {
+                return viewController
+            }
+        }
+        
+        return nil
+    }
+    
+    /// Set interactable or not
+    @discardableResult
+    func interaction(_ val: Bool) -> Self {
+        isUserInteractionEnabled = val
+        return self
+    }
+
+    /// Set cornor radius of view
+    @discardableResult
+    func radius(_ val: CGFloat) -> Self {
+        if val > 0 {
+            clipsToBounds = true
+        }
+        layer.cornerRadius = val
+        
+        return self
+    }
+    
+    /// Set background color
+    @discardableResult
+    func back(_ color: UIColor) -> Self {
+        backgroundColor = color
+        return self
+    }
+
+    /// View content mode to AspectFit
+    @discardableResult
+    func contain() -> Self {
+        contentMode = .scaleAspectFit
+        return self
+    }
+
+    /// View content mode to AspectFill
+    @discardableResult
+    func cover() -> Self {
+        contentMode = .scaleAspectFill
+        return self
+    }
+
+    /// View content mode to Fill
+    @discardableResult
+    func fill() -> Self {
+        contentMode = .scaleToFill
+        return self
+    }
 
     /// Subtract coord from view's min pos
     @discardableResult
-    func before(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : from.frame.minX - (x ?? 0),
-                       y: y == nil ? frame.minY : from.frame.minY - (y ?? 0),
+    func before(_ from: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (from?.frame.minX ?? 0) - (x ?? 0),
+                       y: y == nil ? frame.minY : (from?.frame.minY ?? 0) - (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
     }
 
     /// Append coord from view's min pos (start)
     @discardableResult
-    func start(_ of: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : of.frame.minX + (x ?? 0),
-                       y: y == nil ? frame.minY : of.frame.minY + (y ?? 0),
+    func start(_ of: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (of?.frame.minX ?? 0) + (x ?? 0),
+                       y: y == nil ? frame.minY : (of?.frame.minY ?? 0) + (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
     }
 
     /// Append coord from view's max pos
     @discardableResult
-    func after(_ from: UIView, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
-        frame = CGRect(x: x == nil ? frame.minX : from.frame.maxX + (x ?? 0),
-                       y: y == nil ? frame.minY : from.frame.maxY + (y ?? 0),
+    func after(_ from: UIView?, x: CGFloat? = nil, y: CGFloat? = nil) -> Self {
+        frame = CGRect(x: x == nil ? frame.minX : (from?.frame.maxX ?? 0) + (x ?? 0),
+                       y: y == nil ? frame.minY : (from?.frame.maxY ?? 0) + (y ?? 0),
                        width: frame.width, height: frame.height)
         return self
+    }
+
+    /// Subtract frame variables from current value
+    @discardableResult
+    func sub(x: CGFloat = 0, y: CGFloat = 0, w: CGFloat = 0, h: CGFloat = 0) -> Self {
+        return add(x: -x, y: -y, w: -w, h: -h)
     }
 
     /// Add frame variables from current value
@@ -163,6 +246,30 @@ public extension UIView {
         frame = CGRect(x: frame.minX + x, y: frame.minY + y,
                        width: frame.width + w, height: frame.height + h)
         return self
+    }
+
+    /// Add frame x pos itself with width
+    @discardableResult
+    func subX() -> Self {
+        return sub(x: w)
+    }
+
+    /// Add frame y pos itself with height
+    @discardableResult
+    func subY() -> Self {
+        return sub(y: h)
+    }
+
+    /// Add frame x pos itself with width
+    @discardableResult
+    func addX() -> Self {
+        return add(x: w)
+    }
+
+    /// Add frame y pos itself with height
+    @discardableResult
+    func addY() -> Self {
+        return add(y: h)
     }
 
     /// Set frame variables
@@ -255,7 +362,7 @@ public extension UIView {
         size = CGSize(width: maxWidth, height: maxHeight)
         return self
     }
-
+    
     /// = set width 0 and sizeToFit()
     @discardableResult
     func prefix() -> Self {
@@ -267,7 +374,7 @@ public extension UIView {
     func prefix(_ val: CGFloat = 0) -> Self {
         frame = CGRect(x: frame.minX, y: frame.minY, width: val, height: 0)
         sizeToFit()
-
+        
         return self
     }
 }

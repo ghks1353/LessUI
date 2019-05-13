@@ -10,24 +10,37 @@ import UIKit
 
 public extension UIViewController {
     /// Add a view into this ViewController's view
-    func add(_ view: UIView) {
+    @discardableResult
+    func add(_ view: UIView) -> Self {
         self.view.addSubview(view)
+        return self
     }
 
     /// Add views into this ViewController's view
-    func add(_ views: UIView...) {
+    @discardableResult
+    func add(_ views: UIView...) -> Self {
         views.forEach { obj in
             view.addSubview(obj)
         }
+        return self
     }
 
     /// Add views with array into this viewController's view
-    func add(_ views: [UIView]) {
+    @discardableResult
+    func add(_ views: [UIView]) -> Self {
         views.forEach { obj in
             view.addSubview(obj)
         }
+        return self
     }
 
+    /// Set view's background color
+    @discardableResult
+    func back(_ color: UIColor) -> Self {
+        view.backgroundColor = color
+        return self
+    }
+    
     /// Show default signle dialog with no/yes button
     @discardableResult
     func dialog(title: String? = nil,
@@ -66,6 +79,11 @@ public extension UIViewController {
                  
                  actions: [String] = [],
                  styles: [String: UIAlertAction.Style] = [:],
+                 checked: [String: Bool] = [:],
+                 
+                 source: UIView? = nil,
+                 sourceRect: CGRect? = nil,
+                 arrowDirection: UIPopoverArrowDirection? = nil,
                  
                  on: (() -> Void)? = nil,
                  onSelect: @escaping ((UIAlertController, UIAlertAction, Int) -> Void)) -> UIAlertController {
@@ -75,19 +93,36 @@ public extension UIViewController {
 
         /// Add sheet actions
         for i: Int in 0 ..< actions.count {
-            sheetView.addAction(
-                UIAlertAction(title: actions[i],
-                              style: styles[actions[i]] ?? .default,
-                              handler: { act in
-                                  onSelect(sheetView, act, i)
-                })
-            )
+            let action: UIAlertAction = UIAlertAction(title: actions[i],
+                                                      style: styles[actions[i]] ?? .default,
+                                                      handler: { act in onSelect(sheetView, act, i) })
+            if checked[actions[i]] == true {
+                action.setValue(true, forKey: "checked")
+            }
+            
+            sheetView.addAction(action)
+        }
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            sheetView.popoverPresentationController?.sourceView = source
+            sheetView.popoverPresentationController?.sourceRect = sourceRect ?? .zero
+            sheetView.popoverPresentationController?.permittedArrowDirections = arrowDirection ?? UIPopoverArrowDirection.any
         }
 
         // Show view
         present(sheetView, animated: true, completion: on)
-
         return sheetView
+    }
+    
+    /// Create new tabbar item
+    @discardableResult
+    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero) -> Self {
+        tabBarItem = UITabBarItem(title: title,
+                                  image: off?.withRenderingMode(.alwaysOriginal),
+                                  selectedImage: on?.withRenderingMode(.alwaysOriginal))
+        tabBarItem?.imageInsets = inset
+        
+        return self
     }
 
     /// = view.frame.width

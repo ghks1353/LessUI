@@ -22,9 +22,9 @@ public extension UIButton {
 
     /// Apply button styles by params
     @discardableResult
-    func style(color col: UIColor = .black,
-               touch tou: UIColor = .black,
-               disabled dis: UIColor = .gray,
+    func style(color col: UIColor? = nil,
+               touch tou: UIColor? = nil,
+               disabled dis: UIColor? = nil,
                
                background bg: UIColor = .clear,
                radius rad: CGFloat = 0,
@@ -32,14 +32,24 @@ public extension UIButton {
                title lbl: String = "",
                titleInset lns: UIEdgeInsets = .zero,
                
+               font fnt: String? = nil,
+               size pt: CGFloat? = nil,
+               bold st: Bool? = nil,
+               
                image img: UIImage? = nil,
                disabledImage dimg: UIImage? = nil,
                imageInset ins: UIEdgeInsets = .zero,
                
                semantic sem: UISemanticContentAttribute = .unspecified) -> Self {
-        setTitleColor(col, for: .normal)
-        setTitleColor(tou, for: .highlighted)
-        setTitleColor(dis, for: .disabled)
+        if col != nil {
+            setTitleColor(col!, for: .normal)
+        }
+        if tou != nil {
+            setTitleColor(tou!, for: .highlighted)
+        }
+        if dis != nil {
+            setTitleColor(dis!, for: .disabled)
+        }
 
         backgroundColor = bg
 
@@ -49,6 +59,14 @@ public extension UIButton {
         setTitle(lbl, for: .normal)
         setImage(img, for: .normal)
         setImage(dimg, for: .disabled)
+        
+        // Set font
+        let fontSize: CGFloat = pt ?? (titleLabel?.font.pointSize ?? UIFont.systemFontSize)
+        let fontBold: Bool = st ?? false
+        let fontName: String = fnt ?? (fontBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)).fontName
+        
+        titleLabel?.font = UIFont(name: fontName, size: fontSize)
+        
 
         titleEdgeInsets = lns
         imageEdgeInsets = ins

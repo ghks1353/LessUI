@@ -2,6 +2,11 @@ use_frameworks!
 
 target 'LessUI_Example' do
   pod 'LessUI', :path => '../'
+  pod 'LessUI/Transition', :path => '../'
+  pod 'LessUI/Network', :path => '../'
+  
+  pod 'pop', '~> 1.0'
+  pod 'Alamofire', '~> 4.7'
 
   target 'LessUI_Tests' do
     inherit! :search_paths
