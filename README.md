@@ -1,6 +1,5 @@
 # LessUI
 
-[![CI Status](https://img.shields.io/travis/ghks1353/LessUI.svg?style=flat)](https://travis-ci.org/ghks1353/LessUI)
 [![Version](https://img.shields.io/cocoapods/v/LessUI.svg?style=flat)](https://cocoapods.org/pods/LessUI)
 [![License](https://img.shields.io/cocoapods/l/LessUI.svg?style=flat)](https://cocoapods.org/pods/LessUI)
 [![Platform](https://img.shields.io/cocoapods/p/LessUI.svg?style=flat)](https://cocoapods.org/pods/LessUI)
@@ -87,9 +86,21 @@ Go to `Example` directory, run `pod install`, and open `LessUI.xcworkspace`.
 pod 'LessUI'
 ```
 
+Networking utils with [Alamofire](https://github.com/Alamofire/Alamofire)
+
+```ruby
+pod 'LessUI/Network'
+```
+
+Animation utils with [pop](https://github.com/facebook/pop)
+
+```ruby
+pod 'LessUI/Transition'
+```
+
 ### Manual
 
-Create a group into your project, drag all source codes in `LessUI/src` into your new folder.
+Create a group into your project, drag all source codes in `LessUI/src/default` into your new folder. If you want to install for /Network, /Transition or both, you have to install dependencies too.
 
 ## Author
 
