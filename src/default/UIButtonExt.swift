@@ -63,10 +63,16 @@ public extension UIButton {
         // Set font
         let fontSize: CGFloat = pt ?? (titleLabel?.font.pointSize ?? UIFont.systemFontSize)
         let fontBold: Bool = st ?? false
-        let fontName: String = fnt ?? (fontBold ? UIFont.boldSystemFont(ofSize: fontSize) : UIFont.systemFont(ofSize: fontSize)).fontName
         
-        titleLabel?.font = UIFont(name: fontName, size: fontSize)
-        
+        if fnt != nil {
+            titleLabel?.font = UIFont(name: fnt ?? "", size: fontSize)
+        } else { // Seperate system font applies for iOS 13
+            if fontBold {
+                titleLabel?.font = UIFont.boldSystemFont(ofSize: fontSize)
+            } else {
+                titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+            }
+        }
 
         titleEdgeInsets = lns
         imageEdgeInsets = ins
