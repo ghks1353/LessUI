@@ -102,6 +102,24 @@ pod 'LessUI/Transition'
 
 Create a group into your project, drag all source codes in `LessUI/src/default` into your new folder. If you want to install for /Network, /Transition or both, you have to install dependencies too.
 
+## Use in App Extension
+
+LessUI uses `UIApplication.shared` but you can not use `shared` in extension code. If you want to use LessUI for extension, add `-D EXTENSION` into `Other-Swift-Flags` in `Build Settings`. For cocoapods, add this script in `Podfile` for *extension target*:
+
+```ruby
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "LessUI"
+            target.build_configurations.each do |config|
+                config.build_settings['OTHER_SWIFT_FLAGS'] ||= ['$(inherited)', '-D', 'EXTENSION']
+            end
+        end
+    end
+end
+```
+
+If you add this script into main app, target some functions that uses `UIApplication.shared` returns wrong value. We recommend to seperate post_install script for each targets.
+
 ## Author
 
 Seru, ghks1353@gmail.com
