@@ -157,11 +157,10 @@ public extension UIViewController {
 
     /// Height of status bar
     var status: CGFloat {
-        #if EXTENSION
-        return 0
-        #else
-        return UIApplication.shared.statusBarFrame.height
-        #endif
+        if #available(iOS 11.0, *) {
+            return view.safeAreaInsets.top
+        }
+        return topLayoutGuide.length
     }
 
     /// Height of navigation bar
@@ -171,11 +170,7 @@ public extension UIViewController {
 
     /// = status + nav
     var top: CGFloat {
-        #if EXTENSION
-        return navigationController?.navigationBar.frame.height ?? 0
-        #else
-        return UIApplication.shared.statusBarFrame.height + (navigationController?.navigationBar.frame.height ?? 0)
-        #endif
+        return status + nav
     }
 
     /// = safearea.bottom
