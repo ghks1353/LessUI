@@ -206,6 +206,13 @@ public extension UIView {
         contentMode = .scaleToFill
         return self
     }
+    
+    /// Same as semanticContentAttribute
+    @discardableResult
+    func contentAttr(to val: UISemanticContentAttribute) -> Self {
+        semanticContentAttribute = val
+        return self
+    }
 
     /// Subtract coord from view's min pos
     @discardableResult
@@ -299,7 +306,11 @@ public extension UIView {
     /// = vCenter() -> hCenter()
     @discardableResult
     func vhCenter() -> Self {
-        return vCenter().hCenter()
+        frame = CGRect(x: val * 0.5 - frame.width * 0.5,
+                       y: val * 0.5 - frame.height * 0.5,
+                       width: frame.width,
+                       height: frame.height)
+        return self
     }
 
     /// Align view to horizional center of parent
@@ -355,8 +366,10 @@ public extension UIView {
         var maxHeight: CGFloat = 0
 
         for v in subviews {
-            if v.mxX > maxWidth { maxWidth = v.mxX }
-            if v.mxY > maxHeight { maxHeight = v.mxY }
+            if v.isHidden == false {
+                if v.mxX > maxWidth { maxWidth = v.mxX }
+                if v.mxY > maxHeight { maxHeight = v.mxY }
+            }
         }
 
         size = CGSize(width: maxWidth, height: maxHeight)

@@ -78,8 +78,8 @@ public extension UIViewController {
                  message: String? = nil,
                  
                  actions: [String] = [],
-                 styles: [String: UIAlertAction.Style] = [:],
-                 checked: [String: Bool] = [:],
+                 styles: [Int: UIAlertAction.Style] = [:],
+                 checked: [Int: Bool] = [:],
                  
                  source: UIView? = nil,
                  sourceRect: CGRect? = nil,
