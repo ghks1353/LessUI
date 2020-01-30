@@ -206,7 +206,7 @@ public extension UIView {
         contentMode = .scaleToFill
         return self
     }
-    
+
     /// Same as semanticContentAttribute
     @discardableResult
     func contentAttr(to val: UISemanticContentAttribute) -> Self {
@@ -306,8 +306,8 @@ public extension UIView {
     /// = vCenter() -> hCenter()
     @discardableResult
     func vhCenter() -> Self {
-        frame = CGRect(x: val * 0.5 - frame.width * 0.5,
-                       y: val * 0.5 - frame.height * 0.5,
+        frame = CGRect(x: (view?.frame.width ?? 0) * 0.5 - frame.width * 0.5,
+                       y: (view?.frame.height ?? 0) * 0.5 - frame.height * 0.5,
                        width: frame.width,
                        height: frame.height)
         return self
