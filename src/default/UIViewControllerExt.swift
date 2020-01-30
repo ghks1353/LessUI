@@ -94,9 +94,9 @@ public extension UIViewController {
         /// Add sheet actions
         for i: Int in 0 ..< actions.count {
             let action: UIAlertAction = UIAlertAction(title: actions[i],
-                                                      style: styles[actions[i]] ?? .default,
+                                                      style: styles[i] ?? .default,
                                                       handler: { act in onSelect(sheetView, act, i) })
-            if checked[actions[i]] == true {
+            if checked[i] == true {
                 action.setValue(true, forKey: "checked")
             }
             
