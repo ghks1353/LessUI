@@ -116,10 +116,10 @@ public extension UIViewController {
     
     /// Create new tabbar item
     @discardableResult
-    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero) -> Self {
+    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero, render: UIImage.RenderingMode = .alwaysOriginal) -> Self {
         tabBarItem = UITabBarItem(title: title,
-                                  image: off?.withRenderingMode(.alwaysOriginal),
-                                  selectedImage: on?.withRenderingMode(.alwaysOriginal))
+                                  image: off?.withRenderingMode(render),
+                                  selectedImage: on?.withRenderingMode(render))
         tabBarItem?.imageInsets = inset
         
         return self
