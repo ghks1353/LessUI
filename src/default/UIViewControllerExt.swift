@@ -76,6 +76,7 @@ public extension UIViewController {
     @discardableResult
     func actions(title: String? = nil,
                  message: String? = nil,
+                 tintColor: UIColor? = nil,
                  
                  actions: [String] = [],
                  styles: [Int: UIAlertAction.Style] = [:],
@@ -90,6 +91,10 @@ public extension UIViewController {
         let sheetView: UIAlertController = UIAlertController(title: title,
                                                              message: message,
                                                              preferredStyle: .actionSheet)
+
+        if tintColor != nil {
+            sheetView.view.tintColor = tintColor
+        }
 
         /// Add sheet actions
         for i: Int in 0 ..< actions.count {
