@@ -26,11 +26,11 @@ public extension UIButton {
                touch tou: UIColor? = nil,
                disabled dis: UIColor? = nil,
                
-               background bg: UIColor = .clear,
-               radius rad: CGFloat = 0,
+               background bg: UIColor? = nil,
+               radius rad: CGFloat? = nil,
                
-               title lbl: String = "",
-               titleInset lns: UIEdgeInsets = .zero,
+               title lbl: String? = nil,
+               titleInset lns: UIEdgeInsets? = nil,
                
                font fnt: String? = nil,
                size pt: CGFloat? = nil,
@@ -38,27 +38,20 @@ public extension UIButton {
                
                image img: UIImage? = nil,
                disabledImage dimg: UIImage? = nil,
-               imageInset ins: UIEdgeInsets = .zero,
+               imageInset ins: UIEdgeInsets? = nil,
                
-               semantic sem: UISemanticContentAttribute = .unspecified) -> Self {
-        if col != nil {
-            setTitleColor(col!, for: .normal)
-        }
-        if tou != nil {
-            setTitleColor(tou!, for: .highlighted)
-        }
-        if dis != nil {
-            setTitleColor(dis!, for: .disabled)
-        }
+               semantic sem: UISemanticContentAttribute? = nil) -> Self {
+        if col != nil { setTitleColor(col!, for: .normal) }
+        if tou != nil { setTitleColor(tou!, for: .highlighted) }
+        if dis != nil { setTitleColor(dis!, for: .disabled) }
+        if bg != nil { backgroundColor = bg ?? .clear }
 
-        backgroundColor = bg
+        if rad ?? 0 > 0 { clipsToBounds = true }
+        if rad != nil { layer.cornerRadius = rad ?? 0 }
 
-        clipsToBounds = true
-        layer.cornerRadius = rad
-
-        setTitle(lbl, for: .normal)
-        setImage(img, for: .normal)
-        setImage(dimg, for: .disabled)
+        if lbl != nil { setTitle(lbl, for: .normal) }
+        if img != nil { setImage(img, for: .normal) }
+        if dimg != nil { setImage(dimg, for: .disabled) }
         
         // Set font
         let fontSize: CGFloat = pt ?? (titleLabel?.font.pointSize ?? UIFont.systemFontSize)
@@ -74,10 +67,10 @@ public extension UIButton {
             }
         }
 
-        titleEdgeInsets = lns
-        imageEdgeInsets = ins
+        if lns != nil { titleEdgeInsets = lns ?? .zero }
+        if ins != nil { imageEdgeInsets = ins ?? .zero }
+        if sem != nil { semanticContentAttribute = sem ?? .unspecified }
 
-        semanticContentAttribute = sem
         return self
     }
 }

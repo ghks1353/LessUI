@@ -62,25 +62,26 @@ public extension UILabel {
     /// Apply font styles by params
     @discardableResult
     func style(font f: String? = nil,
-               size s: CGFloat = 13,
-               color c: UIColor = .white,
+               size s: CGFloat? = nil,
+               color c: UIColor? = nil,
                bold b: Bool = false,
-               align a: NSTextAlignment = .left,
-               lines l: Int = 0) -> Self {
+               align a: NSTextAlignment? = nil,
+               lines l: Int? = nil) -> Self {
+                   
+        let currentSize: CGFloat = s ?? font.pointSize
         if f != nil {
-            font = UIFont(name: f ?? "", size: s)
+            font = UIFont(name: f ?? "", size: currentSize)
         } else {
             if !b {
-                font = UIFont.systemFont(ofSize: s)
+                font = UIFont.systemFont(ofSize: currentSize)
             } else {
-                font = UIFont.boldSystemFont(ofSize: s)
+                font = UIFont.boldSystemFont(ofSize: currentSize)
             } // end if
         }
 
-        textAlignment = a
-        numberOfLines = l
-
-        textColor = c
+        if a != nil { textAlignment = a ?? .left }
+        if l != nil { numberOfLines = l ?? 0 }
+        if c != nil { textColor = c ?? .white }
 
         return self
     }
