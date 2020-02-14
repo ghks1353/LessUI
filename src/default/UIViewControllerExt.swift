@@ -80,6 +80,7 @@ public extension UIViewController {
                  
                  actions: [String] = [],
                  styles: [Int: UIAlertAction.Style] = [:],
+                 colors: [Int: UIColor] = [:],
                  checked: [Int: Bool] = [:],
                  
                  source: UIView? = nil,
@@ -101,10 +102,8 @@ public extension UIViewController {
             let action: UIAlertAction = UIAlertAction(title: actions[i],
                                                       style: styles[i] ?? .default,
                                                       handler: { act in onSelect(sheetView, act, i) })
-            if checked[i] == true {
-                action.setValue(true, forKey: "checked")
-            }
-            
+            if checked[i] == true { action.setValue(true, forKey: "checked") }
+            if colors[i] != nil { action.setValue(colors[i] ?? .clear, forKey: "titleTextColor") }
             sheetView.addAction(action)
         }
         
