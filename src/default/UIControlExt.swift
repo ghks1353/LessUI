@@ -9,17 +9,33 @@ import Foundation
 import UIKit
 
 public extension UIControl {
-    /// = addTarget
+
+    /// Same as addTarget
     @discardableResult
-    func regist(to: Any?, act: Selector, for evt: UIControl.Event) -> Self {
+    func register(to: Any?, act: Selector, for evt: UIControl.Event) -> Self {
         addTarget(to, action: act, for: evt)
         return self
     }
 
-    /// = removeTarget
+    /// Same as removeTarget
     @discardableResult
-    func unregist(to: Any?, act: Selector, for evt: UIControl.Event) -> Self {
+    func unregister(to: Any?, act: Selector, for evt: UIControl.Event) -> Self {
         removeTarget(to, action: act, for: evt)
         return self
     }
+
+    /// Same as contentHorizontalAlignment
+    @discardableResult
+    func hAlign(to val: UIControl.ContentHorizontalAlignment) -> Self {
+        contentHorizontalAlignment = val
+        return self
+    }
+
+    /// Same as contentVerticalAlignment
+    @discardableResult
+    func vAlign(to val: UIControl.ContentVerticalAlignment) -> Self {
+        contentVerticalAlignment = val
+        return self
+    }
+
 }

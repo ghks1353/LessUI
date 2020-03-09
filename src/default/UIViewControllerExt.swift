@@ -76,10 +76,12 @@ public extension UIViewController {
     @discardableResult
     func actions(title: String? = nil,
                  message: String? = nil,
+                 tintColor: UIColor? = nil,
                  
                  actions: [String] = [],
-                 styles: [String: UIAlertAction.Style] = [:],
-                 checked: [String: Bool] = [:],
+                 styles: [Int: UIAlertAction.Style] = [:],
+                 colors: [Int: UIColor] = [:],
+                 checked: [Int: Bool] = [:],
                  
                  source: UIView? = nil,
                  sourceRect: CGRect? = nil,
@@ -91,15 +93,17 @@ public extension UIViewController {
                                                              message: message,
                                                              preferredStyle: .actionSheet)
 
+        if tintColor != nil {
+            sheetView.view.tintColor = tintColor
+        }
+
         /// Add sheet actions
         for i: Int in 0 ..< actions.count {
             let action: UIAlertAction = UIAlertAction(title: actions[i],
-                                                      style: styles[actions[i]] ?? .default,
+                                                      style: styles[i] ?? .default,
                                                       handler: { act in onSelect(sheetView, act, i) })
-            if checked[actions[i]] == true {
-                action.setValue(true, forKey: "checked")
-            }
-            
+            if checked[i] == true { action.setValue(true, forKey: "checked") }
+            if colors[i] != nil { action.setValue(colors[i] ?? .clear, forKey: "titleTextColor") }
             sheetView.addAction(action)
         }
         
@@ -116,10 +120,10 @@ public extension UIViewController {
     
     /// Create new tabbar item
     @discardableResult
-    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero) -> Self {
+    func tab(title: String?, on: UIImage? = nil, off: UIImage? = nil, inset: UIEdgeInsets = .zero, render: UIImage.RenderingMode = .alwaysOriginal) -> Self {
         tabBarItem = UITabBarItem(title: title,
-                                  image: off?.withRenderingMode(.alwaysOriginal),
-                                  selectedImage: on?.withRenderingMode(.alwaysOriginal))
+                                  image: off?.withRenderingMode(render),
+                                  selectedImage: on?.withRenderingMode(render))
         tabBarItem?.imageInsets = inset
         
         return self

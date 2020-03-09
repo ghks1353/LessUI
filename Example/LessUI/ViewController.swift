@@ -35,7 +35,7 @@ class ViewController: UIViewController {
                    touch: 0x7AADFF.c,
                    disabled: 0xCCCCCC.c,
                    title: "Touch me :)")
-            .regist(to: self, act: #selector(btnHandler), for: .touchUpInside)
+            .register(to: self, act: #selector(btnHandler), for: .touchUpInside)
 
         // Add container view to ViewController's view
         container.add(to: view)
@@ -100,7 +100,7 @@ class ViewController: UIViewController {
                 actions: ["Cute normal title",
                           "Cool cancel title",
                           "Bad destructive title"],
-                styles: ["Bad destructive title": .destructive]) { _, _, index in
+                styles: [2: .destructive]) { _, _, index in
             if index == 2 {
                 // Show simple title and OK dialog
                 self.dialog(title: "Nice! you selected the destructive title :>", positive: "OK")
